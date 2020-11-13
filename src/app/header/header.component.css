@@ -1,3 +1,16 @@
+.header{
+  overflow: hidden;
+  /*position: fixed;*/
+  /*background-color: #000000;*/
+  font-weight: bolder;
+}
+
+a, a:visited, a:hover, a:active{
+  text-decoration: none;
+  color: inherit;
+}
+
+
 .header a{
     float: left;
     text-align: center;

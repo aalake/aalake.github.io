@@ -1,8 +1,22 @@
 .mytitle{
+    margin: auto;
     text-align: center;
     padding-top: 60px ;
     padding-bottom: 60px;
-    width: 15in;
-    height: 2in;
-    
+    width: 20in;
+    /*width:15in;*/
+    height: 2in;   
+    /*background-color: grey; */
+}
+
+.mytitle h1{
+    font-size: 50px; 
+    /*padding-bottom: 0px;*/ /*if you want to give top text some room at bottom*/
+    line-height: 0px;
+}
+
+.mytitle p{
+   /*padding-top: 0px;*/ /*if you want to give bottom text some room*/
+    font-size: 20px;
+    line-height: 0px;
 }
