@@ -1,8 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 html {/*background-color: #292929;*/
       font-family: 'Courier New', Courier, monospace; 
-      background-color: #F1F3F3;
-      
+      /*background-color: #F1F3F3;*/
+      background-color: #FFF;
     }
 
     body{

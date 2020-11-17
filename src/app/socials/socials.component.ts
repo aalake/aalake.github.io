@@ -4,7 +4,7 @@ import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 /*import { faBath } from '@fortawesome/free-solid-svg-icons';*/
  //import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'; 
  import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'; 
- import {faEnvelope, faFileAlt } from '@fortawesome/free-solid-svg-icons'
+ import {faEnvelope, faFileAlt } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-socials',

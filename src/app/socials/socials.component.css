@@ -1,8 +1,8 @@
 
 
 .wrapper .button{
-    
-    display: block;
+    /*display: block;*/
+    display: inline;
     height: 40px;
     width: 40px; 
     /*float: left;*/ /*this also makes them inline and overrides block display*/
@@ -14,32 +14,34 @@
     cursor: pointer;
     box-shadow: 0px 10px 10px rgba(0,0,0,0); /*0,0,0,0.1*/
     /*transition: all 0.3s ease-out;*/
-    transition: width 0.3s ease-in;
+    /*transition: width 0.3s ease-in;*/
     
 } 
 
-.wrapper .button:hover{
-    width: 170px; /*length of color after brand names*/
-    background: #E5E8E7; 
+/* .wrapper .button:hover{
+    /*width: 170px;*/ /*length of color after brand names*/
+    /*background: #E5E8E7;*/ /*the color of the background trasition behind names
    
-}
+}*/
 
 .wrapper .button .icon{
-    display: inline-block;
+    /*display: inline-block; */
+    display: inline;
     height: 40px;
     width: 40px;
     text-align: center;
     border-radius: 50px;
     box-sizing: border-box ;
     line-height: 40px;
-    transition: all 0.3s ease-out;
-    
+   /* transition: all 0.3s ease-out;*/
+   /* color: rgba(0, 0, 0, 0.212) */ /* if I want to make the icons translucent*/
 }
 
 /*Hover color for first icon & name*/
 .wrapper .button:nth-child(1):hover .icon{
     /*color: #959396;*/
-    color: #A09EA0; 
+   color: #A09EA0; 
+   /*color: #000 */
 }
 
 .wrapper .button:nth-child(1):hover span{
@@ -70,9 +72,9 @@
     color: #769489;
 }
 
-.wrapper .button:nth-child(4):hover span{
+/*.wrapper .button:nth-child(4):hover span{
     color: #769489;
-}
+}*/
 
 
 .wrapper .button .icon fa-icon{

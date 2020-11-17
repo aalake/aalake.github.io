@@ -1,0 +1,12 @@
+input{
+    display: block;
+    margin: 5px;
+}
+
+label{
+    font-weight: bold;
+}
+
+textarea{
+    display: block;
+}

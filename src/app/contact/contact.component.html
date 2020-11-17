@@ -1,0 +1,13 @@
+<form #myform = "ngForm" (ngSubmit) = "onSubmit(myform)">
+    <div id="forms">
+    <label for="email">email</label>
+    <input type="text" name="email" placeholder="eg. hello@mail.com">
+    <label for="fullname">full name</label>
+    <input type="text" name="fullname" placeholder="eg. First Last">
+    <label for="message">message</label>
+    <textarea type="text" name="message" rows="4" cols="50"></textarea>
+    <input type = "submit" value = "Send">
+
+    <!--<fa-icon [icon]="faPaperPlane"><input type = "submit" value = "Send"></fa-icon>-->
+    </div>
+</form>
