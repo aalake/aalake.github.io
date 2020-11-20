@@ -13,8 +13,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
-
-
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -36,7 +35,8 @@ import { HomeComponent } from './home/home.component';
     FontAwesomeModule,
     MatGridListModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
