@@ -40,7 +40,7 @@ app.post("/api/contact", (req,res,next)=>{
         //console.log(contact);
         res.status(201).json({
             message: 'Contact added succesfully',
-            contact: contact 
+            contact: contact
         });
 });
 
