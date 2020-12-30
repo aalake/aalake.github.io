@@ -1,14 +1,17 @@
 .footer{
     margin: auto;
     text-align: center;
-    position: static;
-    bottom: 0px;
+    /* position: static; */
+    /* position: fixed;
+    bottom: 0px; */
     width: 100%;
     padding-top: 500px;
-    background-color: grey;
+    /*background-color: grey;*/
+    
 }
 
 .footer a, a:visited, a:hover, a:active {
     text-decoration: none;
-    color: #017038;
+    /*color: #017038;*/
+    color: #287494;
 }

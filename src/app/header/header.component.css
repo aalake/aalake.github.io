@@ -1,6 +1,7 @@
 .header{
+  text-align: center;
   overflow: hidden;
-  /*position: fixed;*/
+  /* position: fixed; */
   /*background-color: #000000;*/
   font-weight: bolder;
 }
@@ -12,7 +13,7 @@ a, a:visited, a:hover, a:active{
 
 
 .header a{
-    float: left;
+    /* float: left;  */
     text-align: center;
     padding: 15px;
     text-decoration: none;
@@ -20,11 +21,11 @@ a, a:visited, a:hover, a:active{
     border-radius: 4px;
 }
 
-.header-right {
+ /* .header-right {
     float: right;
-}
+}  */
 
-@media screen and (max-width: 500px) {
+/* @media screen and (max-width: 500px) {
     .header a {
       float: none;
       display: block;
@@ -33,6 +34,6 @@ a, a:visited, a:hover, a:active{
     .header-right {
       float: none;
     }
-  }
+  } */
 
   

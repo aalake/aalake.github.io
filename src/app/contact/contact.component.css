@@ -1,6 +1,6 @@
 input{
     display: block;
-    margin: 5px;
+    margin: 5px; 
 }
 
 label{
@@ -10,3 +10,71 @@ label{
 textarea{
     display: block;
 }
+
+.submit-button{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+ #forms{ 
+    background-color: #f9f9f9;
+    padding: 50px;
+    border-radius: 5%; 
+/* added above before I stopped*/
+
+    font-size: 25px;
+    /* height: 400px;  */
+    position: relative; 
+    left:600px; /*Position form to the left*/
+    top:100px; /* Position form down*/
+    right: 400px; /* Position form to the right*/
+    width: 50%;
+    
+    /* top: 50%; */
+} 
+
+mat-form-field {
+    width: 90%; /* Increse width of the input areas*/
+    /* height: 150px; */
+    
+  }
+
+  
+textarea{
+    height: 150px;
+    /* background-color: #fff; */
+}
+
+button{
+    color: gray;
+    font-size: 20px;
+}
+
+button:hover{
+    color:black;
+    /* filter: drop-shadow(2px 2px 15px #000000); */
+}
+
+/* added below for the contact card */
+#contact-card{
+    width: 400px;
+    height: 400px;
+    background-color: green;
+    /* float: left; */
+}
+
+img.profile-img{
+    
+        width: auto;
+        height: auto;  
+        max-width: 96px;  
+        max-height: 96px;
+        clip-path: circle(40% at 50% 60%);
+        float: left;
+}
+
+/*************************/

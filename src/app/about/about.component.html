@@ -1,1 +1,125 @@
-<p>about works!</p>
+<div class="about-page">
+<h1>About Akeem</h1>
+
+    <!-- <img [src]=myimage alt="profile-pic" class="profile-img"> -->
+ 
+
+<div class="description">
+    <p>{{AboutData.description[0]}}</p>
+    <p>{{AboutData.description[1]}}</p>
+    <!-- <p>{{AboutData.description[3]}}</p> -->
+</div>
+<!-- <ul id="skills"> --> 
+       
+    <!-- Background for JS Icon -->
+    <div id="background-icon-div">
+         <p id="background-js"></p>   
+    </div>
+
+<div id="cards">
+     <!-- Frontend Card -->
+    <div id="skills-card">
+         
+        <label id="skills-label">Frontend</label><br>
+         <!-- <li *ngFor = "let items of AboutData.frontendSkills"><br>{{items}}<br></li> -->
+         <!-- <h4>Frontend</h4> -->
+         <div id="skills-rows">
+         <fa-icon id="js-icon"  [icon]="faJsSquare"></fa-icon> 
+         <label id="myskillslabel">Javascript</label>
+         <br>
+         
+         <!-- <fa-icon id="js-icon"  [icon]="faJsSquare"></fa-icon>  -->
+          <!-- <img id="ts-icon" src="assets/images/typescript.png" alt="">
+         <label for="" id="myskills" >Typescript</label>
+         <br>  -->
+
+
+         <fa-icon id="css-icon" [icon]="faCss3Alt"></fa-icon>
+         <label for="" id="myskillslabel">CSS3</label>
+         <br>
+
+         <fa-icon id="html-icon" [icon]="faHtml5"></fa-icon>
+         <label for="" id="myskillslabel">HTML5</label>
+         <br>
+
+         <fa-icon id="angular-icon" [icon]="faAngular"></fa-icon>
+         <label for="" id="myskillslabel">Angular (Typescript)</label>
+         <br>
+
+         </div>
+<!-- </ul> -->
+      </div>    
+      <!-- Backend Card -->
+      <div id="skills-card">
+        <label id="skills-label">Backend/Database</label><br>
+         <!-- <li *ngFor = "let items of AboutData.frontendSkills"><br>{{items}}<br></li> -->
+         <!-- <h4>Frontend</h4> -->
+         <div id="skills-rows">
+         <fa-icon id="node-icon" [icon]="faNodeJs"></fa-icon> 
+         <label id="myskillslabel">Nodejs & Expressjs</label>
+         <br>
+        
+         <fa-icon id="aws-icon" [icon]="faAws"></fa-icon>
+         <label for="" id="myskillslabel">Amazon RDS</label>
+         <br>
+
+         <fa-icon id="database-icon" [icon]="faDatabase"></fa-icon>
+         <label for="" id="myskillslabel">SQL (MySQL,MSSQL)</label>
+         <br>
+
+         <fa-icon id="cube-icon" [icon]="faCubes"></fa-icon>
+         <label for="" id="myskillslabel">MVC</label>
+         <br>
+
+         <fa-icon id="java-icon"  [icon]="faJava"></fa-icon>
+         <label for="" id="myskillslabel">Java</label>
+         <br>
+
+        </div>
+<!-- </ul> -->
+      </div>    
+
+        <!-- Other Card -->
+            <div id="skills-card">
+                <label id="skills-label">Others</label><br>
+                 <!-- <li *ngFor = "let items of AboutData.frontendSkills"><br>{{items}}<br></li> -->
+                 <!-- <h4>Frontend</h4> -->
+                 <div id="skills-rows">
+                 <fa-icon   id="git-icon" [icon]="faCodeBranch"></fa-icon> 
+                 <label id="myskillslabel">Git & Github</label>  <!--change to all labels to h4 or h5 tags-->
+                 <br>
+                 
+                 <fa-icon   id="agile-icon" [icon]="faTasks"></fa-icon>
+                 <label for="" id="myskillslabel">Agile(Scrum)</label>
+                 <br>
+        
+                 <fa-icon  id="datastructure-icon"  [icon]="faDotCircle"></fa-icon>
+                 <label for="" id="myskillslabel">Data Structures</label>
+                 <br>
+        
+                  <fa-icon  id="restapi-icon" [icon]="faLink"></fa-icon>
+                 <label for="" id="myskillslabel">REST API</label>
+                 <br>
+        
+                 <fa-icon  id="cli-icon" [icon]="faTerminal"></fa-icon>
+                 <label for="" id="myskillslabel">CLI</label>
+                 <br>
+        <!--
+                 <fa-icon [icon]=""></fa-icon>
+                 <label for="" id="myskills"></label>
+                 <br>
+        
+                 <fa-icon [icon]=""></fa-icon>
+                 <label for="" id="myskills"></label>
+                 <br> 
+        
+                 <fa-icon [icon]=""></fa-icon>
+                 <label for="" id="myskills">Git & Github</label>
+                -->
+                </div> 
+        <!-- </ul> -->
+              </div>
+              
+</div>
+
+</div>
