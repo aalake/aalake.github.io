@@ -1,6 +1,9 @@
+
+
 input{
-    display: block;
+    /* display: block; */
     margin: 5px; 
+    border: 1px solid red;
 }
 
 label{
@@ -8,7 +11,7 @@ label{
 }
 
 textarea{
-    display: block;
+    /* display: block; */
 }
 
 .submit-button{
@@ -24,23 +27,24 @@ textarea{
     background-color: #f9f9f9;
     padding: 50px;
     border-radius: 5%; 
-/* added above before I stopped*/
-
     font-size: 25px;
     /* height: 400px;  */
     position: relative; 
     left:600px; /*Position form to the left*/
-    top:100px; /* Position form down*/
+    margin-top: 80px; /* moves forms div x value from the top, higher the value the further away it is from the top of page */
     right: 400px; /* Position form to the right*/
     width: 50%;
-    
+    bottom: 500px;
     /* top: 50%; */
+    display: inline-block; /* not sure if this is being applied */
+    border: 1px solid red;
+    
 } 
 
 mat-form-field {
     width: 90%; /* Increse width of the input areas*/
     /* height: 150px; */
-    
+    border: 1px solid red;
   }
 
   
@@ -52,6 +56,7 @@ textarea{
 button{
     color: gray;
     font-size: 20px;
+    border: 1px solid red;
 }
 
 button:hover{
@@ -61,10 +66,13 @@ button:hover{
 
 /* added below for the contact card */
 #contact-card{
-    width: 400px;
-    height: 400px;
-    background-color: green;
+    width: 500px;
+    height: 500px;
+    /* background-color: green; */
     /* float: left; */
+   position: relative;
+   top: 80px; /* moves contact-card div x value from the top, higher the value the further away it is from the top of page */
+   border: 1px solid red;
 }
 
 img.profile-img{
@@ -75,6 +83,20 @@ img.profile-img{
         max-height: 96px;
         clip-path: circle(40% at 50% 60%);
         float: left;
+        position: relative; /* to allow to move profile pic */
+        bottom: 25px; /* moves higher with higher value and down with lower value */
+        border: 1px solid red;
 }
+
+#contact-card>h2{
+    text-align: center;
+    border: 1px solid red;
+}
+
+.card-desc{
+   margin-left: 80px; /*gives space between profile pic and description */
+   border: 1px solid red;
+}
+
 
 /*************************/
