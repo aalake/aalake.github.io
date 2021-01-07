@@ -1,27 +1,27 @@
-
-<div id="contact-card">
+<!-- <div class="contactpage"> -->
+  <div id="contact-card">
   <h2>About Akeem</h2>
-  <div class="profile-image">
+  <span class="profile-image">
   <img [src]=myimage alt="profile-pic" class="profile-img">
-  </div>
+  </span>
 
   <!-- <p class="card-desc">Akeem Lake</p> -->
   <!-- <p class="card-desc">Software Engineer | BcS. Computer Science</p> -->
   <p class="card-desc">Dedicated developer, Contributor, University Graduate. I like to learn and improve on skills that I've accuired through professional and coursework.</p>
 </div>
 
-<div id="forms">
- <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="form" autocomplete="off">
+<div id="forms"> 
+ <form  [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="form" autocomplete="off">
     <!-- <div id="forms"> -->
         <div class="form__div">
-        <mat-form-field class="example-full-width">
+        <mat-form-field class="example-full-width" >
             <mat-label>Full Name</mat-label>
             <input matInput placeholder="Ex. Firstname Lastname" value="" formControlName="fullname"> 
           </mat-form-field>
         </div>
         <br>
 
-        <div class="form__div">
+        <div class="form__div" >
             <mat-form-field class="example-full-width">
                 <mat-label>Email Address</mat-label>
                 <input matInput placeholder="Ex. user@mail.com" value="" formControlName="email"> 
@@ -29,7 +29,7 @@
             </div>
             <br>
 
-            <div class="form__div">
+            <div class="form__div" >
                 <!-- <mat-form-field appearance="fill">  I took the fill appearance off so it doesn't look grey-->
                 <mat-form-field>
                     <mat-label>Message</mat-label>
@@ -61,7 +61,11 @@
 
     <!-- <fa-icon [icon]="faPaperPlane"><input type = "submit" value = "Send" onClick="window.location.reload();"></fa-icon> -->
 
-    <!-- </div> -->
- </form> 
-</div>
+      
+    </form> 
+   </div>
+  <!-- </div> -->
+
+  
+
 

@@ -1,12 +1,13 @@
 .footer{
-    margin: auto;
+    /* margin: auto; */
     text-align: center;
-    /* position: static; */
-    /* position: fixed;
-    bottom: 0px; */
+    position: absolute;
+    
+    height: 35px;
+    bottom: 0px; 
     width: 100%;
-    padding-top: 500px;
-    /*background-color: grey;*/
+    /* padding-top: 500px; */
+    /* background-color: grey; */
     
 }
 

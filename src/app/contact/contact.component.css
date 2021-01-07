@@ -3,7 +3,6 @@
 input{
     /* display: block; */
     margin: 5px; 
-    border: 1px solid red;
 }
 
 label{
@@ -31,20 +30,18 @@ textarea{
     /* height: 400px;  */
     position: relative; 
     left:600px; /*Position form to the left*/
-    margin-top: 80px; /* moves forms div x value from the top, higher the value the further away it is from the top of page */
+    margin-top: 80px; /*moves forms div x value from the top, higher the value the further away it is from the top of page*/
     right: 400px; /* Position form to the right*/
     width: 50%;
-    bottom: 500px;
+    margin-left: 100px; /* temp until I fix contactpage div */
+    /* bottom: 500px; */
     /* top: 50%; */
-    display: inline-block; /* not sure if this is being applied */
-    border: 1px solid red;
-    
+    /* display: inline-block; not sure if this is being applied */
 } 
 
 mat-form-field {
-    width: 90%; /* Increse width of the input areas*/
+    width: 90%; /* Increse width of the input areas */
     /* height: 150px; */
-    border: 1px solid red;
   }
 
   
@@ -56,7 +53,7 @@ textarea{
 button{
     color: gray;
     font-size: 20px;
-    border: 1px solid red;
+    /* border: 1px solid red; */ /* this was just for troubleshooting reasons */
 }
 
 button:hover{
@@ -67,16 +64,16 @@ button:hover{
 /* added below for the contact card */
 #contact-card{
     width: 500px;
-    height: 500px;
+    height: auto;
+    /* height: 500px; */
     /* background-color: green; */
-    /* float: left; */
    position: relative;
    top: 80px; /* moves contact-card div x value from the top, higher the value the further away it is from the top of page */
-   border: 1px solid red;
+   float: left;
+   margin-left: 100px; /* temp until I fix contactpage div */
 }
 
 img.profile-img{
-    
         width: auto;
         height: auto;  
         max-width: 96px;  
@@ -85,18 +82,34 @@ img.profile-img{
         float: left;
         position: relative; /* to allow to move profile pic */
         bottom: 25px; /* moves higher with higher value and down with lower value */
-        border: 1px solid red;
+       
 }
 
 #contact-card>h2{
     text-align: center;
-    border: 1px solid red;
 }
 
 .card-desc{
    margin-left: 80px; /*gives space between profile pic and description */
-   border: 1px solid red;
+}
+
+/* .contactpage{
+     margin-left: 100px;/* moves contact card and form to the right 
+} */
+
+/*************************/
+
+
+.contactpage{
+    
 }
 
 
-/*************************/
+@media screen and (max-width: 600px) {
+    #forms, #contact-card {
+       
+        width: 100%;
+        
+    }
+  }
+

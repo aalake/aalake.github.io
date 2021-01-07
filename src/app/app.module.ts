@@ -19,6 +19,10 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatExpansionModule} from '@angular/material/expansion';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 @NgModule({
@@ -45,7 +49,11 @@ import {MatButtonModule} from '@angular/material/button';
     MatFormFieldModule,
     BrowserAnimationsModule,
     MatInputModule,
-    MatButtonModule 
+    MatButtonModule,
+    MatCardModule,
+    MatDividerModule,
+    MatExpansionModule,
+    FlexLayoutModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
