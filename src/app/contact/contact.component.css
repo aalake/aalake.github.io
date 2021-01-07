@@ -100,16 +100,14 @@ img.profile-img{
 /*************************/
 
 
-.contactpage{
+/* .contactpage{
     
-}
+} */
 
 
 @media screen and (max-width: 600px) {
-    #forms, #contact-card {
-       
+    #forms, #contact-card {   
         width: 100%;
-        
     }
   }
 
