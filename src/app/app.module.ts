@@ -23,7 +23,10 @@ import {MatCardModule} from '@angular/material/card';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { FlexLayoutModule } from '@angular/flex-layout';
-
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatListModule} from '@angular/material/list';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -53,7 +56,11 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatCardModule,
     MatDividerModule,
     MatExpansionModule,
-    FlexLayoutModule 
+    FlexLayoutModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatListModule,
+    MatIconModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

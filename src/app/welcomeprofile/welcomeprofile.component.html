@@ -1,15 +1,34 @@
 <div class="mytitle">
-<div class="titlebackground">
+<!-- <div class="titlebackground">
 
     <div class="circle-image">
-    <!-- <img src="../assets/images/IMG_9021.jpg" alt="profile-pic"> -->
-    <img [src]=myimage alt="profile-pic">
+        <img [src]=myimage alt="profile-pic">
+    
     </div>
 
     <div class="profile-info">
-    <h2>Akeem Lake</h2>
-    <p>Software Engineer</p>
+     <h1 id="name">Akeem Lake</h1>
+    <p id="title">Developer | Contributor</p>
     <app-socials></app-socials>
     </div>
+</div> -->
 </div>
+
+
+<div fxLayout="row wrap" fxLayoutGap="5px grid">
+    <div fxFlex="100%" fxFlex.xs="100%" fxFlex.sm="100%" fxFlex.md="100%" fxFlex.lg="100%">
+ 
+
+        <mat-card class="mat-elevation-z0">
+        <img mat-card-image [src]=myimage alt="profile-pic">
+        
+        <mat-card-title>Akeem Lake</mat-card-title>
+        <mat-card-content>
+               <p id="title">Developer | Contributor</p>
+               <app-socials></app-socials>
+        </mat-card-content>
+
+        </mat-card>
+
+        </div>
 </div>

@@ -1,18 +1,28 @@
-<!-- <div class="contactpage"> -->
-  <div id="contact-card">
+<div class="contactpage">
+  <div id="contact-card" >
   <h2>About Akeem</h2>
   <span class="profile-image">
   <img [src]=myimage alt="profile-pic" class="profile-img">
   </span>
-
-  <!-- <p class="card-desc">Akeem Lake</p> -->
-  <!-- <p class="card-desc">Software Engineer | BcS. Computer Science</p> -->
-  <p class="card-desc">Dedicated developer, Contributor, University Graduate. I like to learn and improve on skills that I've accuired through professional and coursework.</p>
+  <p class="card-desc">
+    Dedicated developer, Contributor, University Graduate. 
+    I like to learn and improve on skills that I've accuired 
+    through professional and coursework.
+    <span id="availability">Availability: Open - January 2021</span>
+  </p>
+  
+  <hr id="contactbelow">
 </div>
 
-<div id="forms"> 
+<div id="form-module" >
+
+<!-- <span id="formheader"> 
+ <h2>Contact me</h2>
+ <p>Send me a general message regarding any opportunities or about the site and I will be get back to you as soon as possible  </p>
+</span> -->
+
+<div id="forms" > 
  <form  [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="form" autocomplete="off">
-    <!-- <div id="forms"> -->
         <div class="form__div">
         <mat-form-field class="example-full-width" >
             <mat-label>Full Name</mat-label>
@@ -36,36 +46,15 @@
                     <textarea matInput placeholder="max: 300 characters" formControlName="message"></textarea>
                   </mat-form-field>
                 </div>
-
-
-        <!-- <div class="form__div">
-    <label for="fullname" class="form_label">full name</label>       
-    <input type="text" name="fullname" class="form__input" placeholder="eg. First Last" formControlName="fullname">
-      </div> -->
-        
-      <!-- <div class="form__div">
-    <label for="email" class="form_label">email</label>      
-    <input type="text" name="email" class="form__input" placeholder="eg. hello@mail.com" formControlName="email">
-     </div> -->
-
-    <!-- <div class="form__div">
-    <label for="message" class="form_label">message</label>   
-    <textarea type="text" name="message" class="form_input" rows="6" cols="50" formControlName="message"></textarea> -->
-    <!-- <input type = "submit" value = "Send" onClick="window.location.reload();">  -->
-    <!-- </div> -->
     
     <button class="submit-button" type="submit" onClick="window.location.reload();">
            Send <fa-icon [icon]="faPaperPlane"></fa-icon>
     </button>
-    
-
-    <!-- <fa-icon [icon]="faPaperPlane"><input type = "submit" value = "Send" onClick="window.location.reload();"></fa-icon> -->
-
-      
     </form> 
    </div>
-  <!-- </div> -->
+</div>   
+
+  </div>
 
   
-
-
+ 

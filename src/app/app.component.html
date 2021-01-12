@@ -1,9 +1,52 @@
 
-<app-header></app-header>
+<!-- <app-header></app-header> -->
 <router-outlet></router-outlet>
+
+<div> 
+    <mat-toolbar >
+      <!-- <div fxShow="true" fxHide.gt-sm="true">
+        <button mat-icon-button (click)="sidenav.toggle()">
+          <mat-icon><fa-icon [icon]="faBars"></fa-icon></mat-icon>
+        </button>
+      </div> -->
+  
+      <a mat-button class="companyName" routerLink="/">
+        <a class="logo">Akeem Lake</a>
+      </a>
+
+      <span class="links-spacer"></span> <!-- Puts space between links and logo -->
+      <div fxShow="true" fxHide.lt-md="true" class="links">
+        <a mat-button routerLink="/portfolio">Portfolio</a>
+        <a mat-button routerLink="/contact">Contact</a>
+        <a mat-button routerLink="/about">About</a>
+      </div>
+
+      <span class="example-spacer"></span> <!-- Puts space between icon and logo-->
+
+      <div fxShow="true" fxHide.gt-sm="true">
+        <button mat-icon-button (click)="sidenav.toggle()">
+          <mat-icon><fa-icon [icon]="faBars"></fa-icon></mat-icon>
+        </button>
+      </div>
+
+
+    </mat-toolbar>
+    <mat-sidenav-container fxFlexFill class="example-container">
+  
+      <mat-sidenav color="primary" #sidenav fxLayout="column" mode="over"  opened="false" fxHide.gt-sm="true" position="end"> <!--position="end" opens side nav on right, default is left or position="start"-->
+        <div fxLayout="column">
+          <a mat-button routerLink="/portfolio" (click)="sidenav.close()">Portfolio</a>
+          <a mat-button routerLink="/contact" (click)="sidenav.close()">Contact</a>
+          <a mat-button routerLink="/about" (click)="sidenav.close()">About</a>
+        </div>
+      </mat-sidenav>
+      <mat-sidenav-content fxFlexFill>
+        <router-outlet></router-outlet>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+  </div>
+
 <!-- <app-footer></app-footer> -->
 
 
 
-  
-  

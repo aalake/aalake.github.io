@@ -49,3 +49,22 @@ img{
     
 }  
 
+#name{
+    font-size: 55px;
+}
+
+
+
+/* Starting new from here */
+
+mat-card{
+    text-align: center;
+    /* box-shadow: none !important; */
+}
+
+mat-card-title{
+    font-size: 70px; 
+    white-space: nowrap;
+    font-family: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif; 
+}
+
