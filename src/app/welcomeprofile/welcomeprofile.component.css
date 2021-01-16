@@ -1,70 +1,81 @@
-.mytitle{
-    position: static;
-    /*margin: auto;*/
+
+.welcome{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+mat-card{
     text-align: center;
+    background-color: inherit;
+    /* box-shadow: none !important; */
+    /* background-color: lightblue; */
+    height: 700px; /* Card height */
+    max-width: 900px; /* Card width */
+    display:flex;
+    flex-direction: column; /* title and description stack (includes any other contents)*/
+    align-items: center;
+    justify-content: center;
     
-    
 }
 
- .titlebackground{
-    padding-top: 60px ;
-    padding-left: 100px ;
-    padding-right: 100px ;
-    padding-bottom: 60px;   
-    /* background-color: #A5CAB7;   */
+/* mat-card-title{
+    font-size: 70px; 
+} */
+
+.title, .greeting, .name{
+    font-size: 85px;
 }
 
-.mytitle h1{
-    font-size: 50px; 
-    /*padding-bottom: 0px;*/ /*if you want to give top text some room at bottom*/
-    line-height: 0px;
-    white-space: nowrap;
+.title{
+    display: block;
+    font-family: "Calibre","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+  }
+
+ .greeting{
+    font-family: "Calibre","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+ }
+
+ .name{
+    color: #287494;
+    font-family: "Calibre","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+ }
+
+.description{
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    max-width: 500px;
+    margin:0 auto;
+    text-align: justify;
 }
 
-.mytitle p{
-   /*padding-top: 0px;*/ /*if you want to give bottom text some room*/
-    font-size: 20px;
-    line-height: 0px;
-    white-space: nowrap;
-}
-
- .profile-info{
-    line-height: 0px;
-    position: relative;
-    top: -40px;
-    /* right: -10px; */
-} 
 
 img{ 
     width: auto;
     height: auto; 
-     max-width: 400px;  
-     max-height: 400px;
-     clip-path: circle(40% at 50% 60%);  /* This makes the profile image a circle   
-                                         use parameters to go width at left(less than 50)-right 
-                                        (more than 50) up(less than 50)-down(more than 50) */
-
+    max-width: 400px;  
+    max-height: 400px;
+    clip-path: circle(40% at 50% 60%);  /* This makes the profile image a circle use parameters to go width at left(less than 50)-right (more than 50) up(less than 50)-down(more than 50) */
     position: relative; /*Declared position allows for location changes*/
-    top: -30px; /*Moves the image 30px closer to the top of the page*/
-    
+    top: -30px; /*Moves the image 30px closer to the top of the page*/    
 }  
 
-#name{
-    font-size: 55px;
+
+
+
+/* .parallelogram {
+	width: 30px;
+	height: 60px;
+    transform: skew(-25deg) ;
+    border-style: solid;
+    border-color: #555;
+    border-radius: 5%;
+    border-width: 2px;
 }
 
-
-
-/* Starting new from here */
-
-mat-card{
-    text-align: center;
-    /* box-shadow: none !important; */
-}
-
-mat-card-title{
-    font-size: 70px; 
-    white-space: nowrap;
-    font-family: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif; 
-}
-
+.letter{
+    position: relative;
+    bottom: 10px;
+    font-size: 25px;
+    font-family: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif;
+    color: #287494;
+} */

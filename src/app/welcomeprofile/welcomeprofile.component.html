@@ -1,34 +1,35 @@
-<div class="mytitle">
-<!-- <div class="titlebackground">
-
-    <div class="circle-image">
-        <img [src]=myimage alt="profile-pic">
-    
-    </div>
-
-    <div class="profile-info">
-     <h1 id="name">Akeem Lake</h1>
-    <p id="title">Developer | Contributor</p>
-    <app-socials></app-socials>
-    </div>
-</div> -->
-</div>
-
-
-<div fxLayout="row wrap" fxLayoutGap="5px grid">
+<div class="welcome">
+<div fxLayout="row wrap" fxLayoutGap="5px grid" >
     <div fxFlex="100%" fxFlex.xs="100%" fxFlex.sm="100%" fxFlex.md="100%" fxFlex.lg="100%">
  
 
         <mat-card class="mat-elevation-z0">
-        <img mat-card-image [src]=myimage alt="profile-pic">
+        <!-- <img mat-card-image [src]=myimage alt="profile-pic"> -->
         
-        <mat-card-title>Akeem Lake</mat-card-title>
+        <mat-card-title>
+            <span class="greeting">Hi, I'm</span> 
+            <span class="name"> Akeem Lake</span> 
+            <span class="title">Software Engineer</span>
+        </mat-card-title>
+
         <mat-card-content>
-               <p id="title">Developer | Contributor</p>
-               <app-socials></app-socials>
-        </mat-card-content>
+         <p class="description"> 
+        I'm a developer currently based in Florida and Georgia, focused on creating
+        and improving websites and more.  
+        </p>
+               <!-- <app-socials></app-socials> -->
+               
+        <!-- <div class="parallelogram">
+            <div class="letter">
+                <p>A</p>
+            </div>
+        </div> -->
+
+            </mat-card-content>
 
         </mat-card>
 
         </div>
+</div>
+
 </div>

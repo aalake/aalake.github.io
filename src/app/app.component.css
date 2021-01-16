@@ -16,3 +16,11 @@ mat-sidenav-container {
   }
   /* flex-grow 1 flex shrink 1 ? look into this to see if you have to include these
   values if you specify a value instead of using auto */
+
+  
+
+  .links{
+    /* font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace; */
+    font-family: 'Brush Script MT', cursive !important;
+    /* color: lightcoral; */
+  }
