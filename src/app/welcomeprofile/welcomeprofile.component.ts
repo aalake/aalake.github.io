@@ -9,6 +9,7 @@ export class WelcomeprofileComponent implements OnInit {
 
   myimage: string = "assets/images/IMG_9021.jpg";
 
+
   constructor() {}
 
   ngOnInit(): void {
