@@ -1,9 +1,10 @@
 
 <!-- <app-header></app-header> -->
-<router-outlet></router-outlet>
+<!-- <router-outlet></router-outlet> -->
 
 <div> 
-    <mat-toolbar >
+  <!-- <mat-toolbar style="background-color:white; border-bottom: 1px solid lightgrey; ">-->
+    <mat-toolbar style="background-color:white;">
       <!-- <div fxShow="true" fxHide.gt-sm="true">
         <button mat-icon-button (click)="sidenav.toggle()">
           <mat-icon><fa-icon [icon]="faBars"></fa-icon></mat-icon>
@@ -46,7 +47,7 @@
           <a mat-button routerLink="/about" (click)="sidenav.close()">About</a>
         </div>
       </mat-sidenav>
-      <mat-sidenav-content fxFlexFill>
+      <mat-sidenav-content fxFlexFill style="background-color: white;">
         <router-outlet></router-outlet>
       </mat-sidenav-content>
     </mat-sidenav-container>

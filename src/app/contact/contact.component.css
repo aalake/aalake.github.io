@@ -1,20 +1,16 @@
 
-* {
+ *{
     box-sizing: border-box;
-  }
+  } 
 
 input{
-    /* display: block; */
     margin: 5px; 
 }
 
-label{
+/* label{
     font-weight: bold;
-}
+} */
 
-textarea{
-    /* display: block; */
-}
 
 .submit-button{
     background-color: Transparent;
@@ -23,9 +19,14 @@ textarea{
     cursor:pointer;
     overflow: hidden;
     outline:none;
+    color: gray; /* change this to a different color gray */
+    font-size: 20px;
 }
 
-
+button:hover{
+    color:black;
+    /* filter: drop-shadow(2px 2px 15px #000000); */
+}
 
 mat-form-field {
     width: 90%; /* Increse width of the input areas */
@@ -35,37 +36,15 @@ mat-form-field {
   
 textarea{
     height: 150px;
-    /* background-color: #fff; */
-}
-
-button{
-    color: gray;
-    font-size: 20px;
-    /* border: 1px solid red; */ /* this was just for troubleshooting reasons */
-}
-
-button:hover{
-    color:black;
-    /* filter: drop-shadow(2px 2px 15px #000000); */
 }
 
 
-
-#contact-card>h2{
+mat-card-title{
     /* text-align: center; */
     font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif;
 }
 
-/* added below for the contact card */
-#contact-card{
-     width: 500px;
-   /* height: auto; */
-   /* position: relative; */
-   /*top: 80px;*/ /* moves contact-card div x value from the top, higher the value the further away it is from the top of page */
-   float: left;
-   /*margin-left: 100px;*/ /* temp until I fix contactpage div */
-   margin-right: 200px;
-}
+
 
 img.profile-img{
         width: auto;
@@ -86,6 +65,7 @@ img.profile-img{
     /* margin-right: 100px; */
     border: none;
     height: 1px;
+    
     float: left;
     /* align hr center */
     display: block; 
@@ -95,214 +75,62 @@ img.profile-img{
 
 .card-desc{
    margin-left: 80px; /*gives space between profile pic and description */
+    max-width: 500px;
+    font-size: 20px;
 }
 
  #forms{ 
-    background-color: #f9f9f9;
+     /* background-color: #f9f9f9; */
+    
     padding: 50px;
-    border-radius: 5%; 
+    /* border-radius: 5%;  */
     font-size: 25px;
-    position: relative; 
+    /* position: relative;  */
+    
     /* left:600px; Position form to the left */
     /*margin-top: 80px;*/ /*moves forms div x value from the top, higher the value the further away it is from the top of page*/
     /*right: 400px;*/ /* Position form to the right*/
-    width: 50%;
-    float: left;
+    /* width: 50%; */
+    /* float: left; */
    /* margin-left: 100px; */ /* temp until I fix contactpage div */
-  
+   min-width: 40%;
+   margin-right: 15px;
+   
 } 
+
+#form-module{
+    justify-content: center;
+}
 
 
 .contactpage{
     margin-top: 5%;
-    margin-left: 10%;
+    margin-left: 1%;
 }
 
-#formheader{
-    /* display: inline; */
-    text-align: justify;
-    margin-top: 255px;
-}
 
-#formheader>h2{
-    margin-bottom: 15px;
-    /* font-weight: 900; */
-    /* font-size: 40px; */
-    /* max-width: 300px; */
-    /* line-height: 0px; */
-    font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif;
-}
-
-#form-module{
-    /* padding-top: 0px; */
-}
-
-#formheader>p{
-    max-width: 700px;
-    display: inline-block;
-    font-size: 25px;
-    /* margin-bottom: 0px; */
-    margin-top: 0px;
-}
-
-.contactpage:after {
+/* .contactpage:after {
     content: "";
     display: table;
     clear: both;
-  }
+  } */
 
 
-/* Extra small devices (phones, 600px and down) */
-@media screen and (max-width: 600px) {
-    #forms, #contact-card,#formheader {   
-        width: 100%;
-        /* text-align: center; */
-        /* font-size: 5vw; */
+#contact-card mat-card{
+     min-height: 400px; 
+     margin-right: 15px;
+}
+
+#testform mat-card{
+    min-width: 40%;
+    margin-right: 15px;
+    border-radius: 5%;
+    padding: 50px;
+    font-size: 25px;
+}
+
+/* @media screen and (min-width: 2300px) {
+    #contact-card{
+        max-width: 800px ;
     }
-
-    #contactbelow{
-        width: 75%;
-    }
-
-    #formheader{
-        display: inline;
-        /* text-align: center; */
-    }
-
-    #form-module{
-        /* position: relative;
-        right: 30px; */
-        /* display: block;
-  margin-left: auto;
-  margin-right: auto; */
-    }
-
-  }
-
-
-
-
-
-  @media screen and (max-width: 1124px) {
-    #forms, #contact-card {   
-        width: 100%;
-        /* text-align: center; */
-    }
-
-    #contactbelow{
-        width: 100%;
-    } 
-
-
-    #formheader{
-        display: inline;
-         /* text-align: center; */
-    }
-
-
-    /* #form-module{
-        position: relative;
-        right: 50px;
-    } */
-
-  }
-
-
-
-  @media screen and (max-width: 1024px) {
-    #forms, #contact-card,#formheader {   
-        width: 100%;
-        /* text-align: center; */
-    }
-
-    #contactbelow{
-        width: 100%;
-    } 
-
-    #formheader{
-        display: inline;
-        /* text-align: center; */
-    }
-
-
-    /* #form-module{
-        position: relative;
-        right: 50px;
-    } */
-
-  }
-
-  @media screen and (max-width: 1009px) {
-    #forms, #contact-card,#formheader {   
-        width: 100%;
-        text-align: center;
-    }
-
-    #contactbelow{
-        width: 75%;
-    }
-
-
-    #formheader{
-        display: inline;
-        text-align: center;
-    }
-
-    /* #form-module{
-        position: relative;
-        right: 30px;
-    } */
-
-  }
-
-  @media screen and (max-width: 800px) {
-    #forms, #contact-card,#formheader {   
-        width: 100%;
-        text-align: center;
-    }
-
-    #contactbelow{
-        width: 75%;
-    }
-
-    #formheader{
-        display: inline;
-        text-align: center;
-    }
-
-    /* #form-module{
-        position: relative;
-        right: 30px;
-    } */
-
-  }
-
-
-
-
-
-  @media screen and (max-width: 500px) {
-    #forms, #contact-card,#formheader {   
-        width: 100%;
-        text-align: center;
-    }
-
-    #contactbelow{
-        width: 100%;
-    }
-
-    #form-module{
-        position: relative;
-        right: 30px; 
-        /* display: block;
-  margin-left: auto;
-  margin-right: auto; */
-
-  
-    }
-
-  }
-
-
-
- 
+  } */

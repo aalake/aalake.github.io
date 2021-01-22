@@ -1,28 +1,35 @@
-<div class="contactpage">
-  <div id="contact-card" >
-  <h2>About Akeem</h2>
-  <span class="profile-image">
-  <img [src]=myimage alt="profile-pic" class="profile-img">
-  </span>
-  <p class="card-desc">
-    Dedicated developer, Contributor, University Graduate. 
-    I like to learn and improve on skills that I've accuired 
-    through professional and coursework.
-    <span id="availability">Availability: Open - January 2021</span>
-  </p>
+<div class="contactpage" fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxLayout.md="column" fxLayout.lg="row" fxLayoutGap="30px">
   
-  <hr id="contactbelow">
-</div>
+  <div id="contact-card"  fxFlexOrder="1">
 
-<div id="form-module" >
+      <mat-card>
+    <mat-card-title>About Akeem</mat-card-title>
+      <mat-card-content>
+      <span class="profile-image">
+        <img [src]=myimage alt="profile-pic" class="profile-img">
+      </span>
+         <p class="card-desc">
+        Dedicated developer, Contributor, University Graduate. 
+         I like to learn and improve on skills that I've accuired 
+         through professional and coursework.
 
-<!-- <span id="formheader"> 
- <h2>Contact me</h2>
- <p>Send me a general message regarding any opportunities or about the site and I will be get back to you as soon as possible  </p>
-</span> -->
+      <br><span id="availability">Availability: Open - January 2021</span>
 
-<div id="forms" > 
- <form  [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="form" autocomplete="off">
+      <br><span id="socials"><app-socials></app-socials></span>
+
+        </p>
+        </mat-card-content>
+     </mat-card>
+
+ 
+   </div>
+  
+
+<!-- <hr id="contactbelow"> -->
+
+  <div id="form-module" fxFlex="50" fxFlexOrder="2">
+  <div id="forms"> 
+    <form  [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="form" autocomplete="off">
         <div class="form__div">
         <mat-form-field class="example-full-width" >
             <mat-label>Full Name</mat-label>
@@ -40,21 +47,21 @@
             <br>
 
             <div class="form__div" >
-                <!-- <mat-form-field appearance="fill">  I took the fill appearance off so it doesn't look grey-->
+                <!-- DONT UNCOMMENT <mat-form-field appearance="fill">  I took the fill appearance off so it doesn't look grey-->
                 <mat-form-field>
                     <mat-label>Message</mat-label>
                     <textarea matInput placeholder="max: 300 characters" formControlName="message"></textarea>
                   </mat-form-field>
                 </div>
     
-    <button class="submit-button" type="submit" onClick="window.location.reload();">
+     <button class="submit-button" type="submit" onClick="window.location.reload();">
            Send <fa-icon [icon]="faPaperPlane"></fa-icon>
-    </button>
+     </button>
     </form> 
    </div>
-</div>   
+  </div>   
 
-  </div>
+</div>
 
   
  
