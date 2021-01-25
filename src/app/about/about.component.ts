@@ -3,7 +3,6 @@ import { AboutData } from '../data/about.data'
 import { faJsSquare, faNodeJs, faAws, faJava, faCss3Alt, faHtml5, faAngular } from '@fortawesome/free-brands-svg-icons'; 
 import { faDatabase, faCodeBranch, faCubes, faTerminal,faLink,faDotCircle, faTasks } from '@fortawesome/free-solid-svg-icons'; 
 
-
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
@@ -29,6 +28,8 @@ export class AboutComponent implements OnInit {
 
 
    myimage: string = "assets/images/IMG_9021.jpg";
+
+
 
   constructor() { 
     // let frontendSkills: string[];

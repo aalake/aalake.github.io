@@ -31,6 +31,7 @@ img.profile-img{
 
 /* These are all the cards for skills */
 #skills-card{   
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   padding-top: 5px; 
   padding-left: 10px;
   width: 270px;
@@ -160,3 +161,12 @@ h4{
     color: #416B01;
 }
 
+
+ mat-card{
+     height: 250px;
+    min-width: 250px;
+    width: 250px;
+    min-height: 300px;
+    background-color: #264de4;
+    /* height: 200px; */
+}

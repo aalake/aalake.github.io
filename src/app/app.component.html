@@ -4,13 +4,12 @@
 
 <div> 
   <!-- <mat-toolbar style="background-color:white; border-bottom: 1px solid lightgrey; ">-->
-    <mat-toolbar style="background-color:white;">
+    <mat-toolbar style="background-color: #FFF;">
       <!-- <div fxShow="true" fxHide.gt-sm="true">
         <button mat-icon-button (click)="sidenav.toggle()">
           <mat-icon><fa-icon [icon]="faBars"></fa-icon></mat-icon>
         </button>
       </div> -->
-  
       <a class="companyName" routerLink="/">
         <a class="logo">Akeem Lake</a>
       </a>
@@ -23,8 +22,9 @@
         <a mat-button routerLink="/about">About</a> -->
 
         <a routerLink="/portfolio"><span class="num">01.</span> Portfolio</a>
-        <a routerLink="/contact"><span class="num">02.</span> Contact</a>
-        <a routerLink="/about"><span class="num">03.</span>About</a>
+        <a routerLink="/about"><span class="num">02.</span>About</a>
+        <a routerLink="/contact"><span class="num">03.</span> Contact</a>
+        
 
       </div>
 
@@ -43,11 +43,12 @@
       <mat-sidenav color="primary" #sidenav fxLayout="column" mode="over"  opened="false" fxHide.gt-sm="true" position="end"> <!--position="end" opens side nav on right, default is left or position="start"-->
         <div fxLayout="column">
           <a mat-button routerLink="/portfolio" (click)="sidenav.close()">Portfolio</a>
-          <a mat-button routerLink="/contact" (click)="sidenav.close()">Contact</a>
           <a mat-button routerLink="/about" (click)="sidenav.close()">About</a>
+          <a mat-button routerLink="/contact" (click)="sidenav.close()">Contact</a>
+          
         </div>
       </mat-sidenav>
-      <mat-sidenav-content fxFlexFill style="background-color: white;">
+      <mat-sidenav-content fxFlexFill style="background-color: #FFF;">
         <router-outlet></router-outlet>
       </mat-sidenav-content>
     </mat-sidenav-container>

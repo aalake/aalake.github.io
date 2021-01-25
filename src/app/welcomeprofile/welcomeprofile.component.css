@@ -34,11 +34,14 @@ mat-card{
 
  .greeting{
     font-family: "Calibre","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+    
+    
  }
 
  .name{
-    color: #287494;
+     color: #287494;
     font-family: "Calibre","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+    /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  //Font-outline */
  }
 
 .description{
