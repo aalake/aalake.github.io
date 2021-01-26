@@ -19,15 +19,15 @@ img.profile-img{
 }
 
 /* my description of myself*/
-.description{
+/* .description{
     width: 80%;
     height: 60%;
-    position: relative;
-    left:10%; /*moves description to the right*/
-    top: 30px;
+    position: relative; */
+    /*left:10%;*/ /*moves description to the right*/
+   /* top: 30px;*/
     /* text-align: center; */
     
-}
+/*}*/
 
 /* These are all the cards for skills */
 #skills-card{   
@@ -162,11 +162,30 @@ h4{
 }
 
 
- mat-card{
-     height: 250px;
-    min-width: 250px;
-    width: 250px;
+
+/* Use everything below, omit above */
+
+
+
+.description mat-card{
+    /* margin-bottom: 50px; */
+    /* background-color: #004C68; */
+    /* min-height: 300px; */
+    min-width: 200px; 
+
+}
+
+.about-container{
+ padding: 16px; 
+}
+
+ .skills mat-card{
     min-height: 300px;
-    background-color: #264de4;
-    /* height: 200px; */
+    width: 110px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+mat-card-title{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }

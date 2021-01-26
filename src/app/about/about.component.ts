@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { AboutData } from '../data/about.data'
 import { faJsSquare, faNodeJs, faAws, faJava, faCss3Alt, faHtml5, faAngular } from '@fortawesome/free-brands-svg-icons'; 
 import { faDatabase, faCodeBranch, faCubes, faTerminal,faLink,faDotCircle, faTasks } from '@fortawesome/free-solid-svg-icons'; 
+import { IAbout } from '../models/about'
+import { ISkills } from '../models/skills'
 
 @Component({
   selector: 'app-about',
@@ -27,19 +29,25 @@ export class AboutComponent implements OnInit {
    faDotCircle = faDotCircle; 
 
 
+   example = 'fa fab-facebook';
+
    myimage: string = "assets/images/IMG_9021.jpg";
+
+  mySkills: ISkills[] = 
+  [
+  {title:'Programming Languages', skills:['Java','Javascript','HTML5', 'CSS3', 'PHP', 'SQL', 'Typescript']},
+  {title:'Libraries & Frameworks',skills:['Angular','Node.js','Express.js']},
+  {title:'Tools & Platforms', skills:['Git(Github)','Visual Studio Code','MySQL','SQL Server', 'Mac', 'iOS', 'Windows', 'Linux']},
+  {title:'Working Knowledge',skills:['PHP','AWS','Vue.js']}
+  ]
+
+
 
 
 
   constructor() { 
-    // let frontendSkills: string[];
-    
-    // for(let i = 0; i < AboutData.frontendSkills.length;i++)
-    // {
-    //   console.log(AboutData.frontendSkills[i])
-        
-    // }
 
+    
   }
 
   ngOnInit(): void {
