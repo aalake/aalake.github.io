@@ -18,11 +18,10 @@
             <mat-card fxFlex.lt-lg="100%" fxFlex.gt-md="100%">
                 <mat-card-title>{{items.title}}</mat-card-title>
                 
-                <mat-icon><div *ngFor="let icons of items.icons"><fa-icon [icon]="icons"></fa-icon></div></mat-icon>
                 <mat-card-content *ngFor="let skills of items.skills">
-                    <ul>
+                   <ul>
                        <li> 
-                        {{skills}}  
+                         {{skills}}  
                        </li>
                    </ul>
                 </mat-card-content>             
@@ -32,6 +31,11 @@
     </div>
 
 </div>
+
+
+
+
+
 
 
 

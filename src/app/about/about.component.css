@@ -59,9 +59,16 @@ img.profile-img{
     padding-left: 20px;
 }
 
+li{
+    list-style-type: none;
+}
 
-
-
+/* Temporary */
+fa-icon{
+    font-size: 25px; 
+    line-height: 40px;
+    vertical-align: middle;
+}
 
 #myskillslabel{
     padding: 20px;
@@ -181,20 +188,4 @@ h4{
 mat-card-title{
     font-size: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-fa-icon{
-    font-size: 19px; 
-    line-height: 31px;
-    vertical-align:middle;
-    float: left;
-    align-items:center; 
-    position: relative; 
-    top: 21px; 
-}
-
-.skills li{
-    list-style-type: none;
-    margin-right: 0%;
-    line-height: 15px;
 }
