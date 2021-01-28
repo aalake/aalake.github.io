@@ -23,11 +23,16 @@
   
   </ng-template>
   
-  <button class="btn btn-outline-primary mb-2 mr-2" (click)="openVerticallyCentered(content)">Modal vertically centered</button>
+  <!--mat-button is here temporary - I will probably style button better later-->
+  <button mat-button class="model-button" (click)="openVerticallyCentered(content)">Contact</button>
 </div>  
 
 <div class="credits">
-<p>  © 2020 | <a href="">Akeem A Lake</a></p>
+<p>  © 2021 |<span> Designed & Built by </span> <a href="mailto:akeemlake@outlook.com" rel="noopener noreferrer" target="_blank">Akeem Lake</a></p>
+<p><fa-icon [icon]="faGithubAlt"></fa-icon></p> <!--Property bind to font awesome icon-->
+<p><fa-icon [icon]="faCodeBranch"></fa-icon></p> <!--Property bind to font awesome icon-->
+<p><fa-icon [icon]="faGitAlt"></fa-icon></p> <!--Property bind to font awesome icon-->
+
 </div>
 
 </div>

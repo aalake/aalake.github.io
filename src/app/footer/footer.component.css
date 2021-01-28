@@ -17,6 +17,10 @@
     color: #287494;
 }
 
+.contact-modal{
+    float: left;
+}
+
 .credits{
      text-align: center;
 }
@@ -29,3 +33,4 @@
 .modal-footer {
     border-top: 0 none;
 }
+
