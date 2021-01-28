@@ -6,9 +6,9 @@ mat-sidenav-container {
     min-width: 100%;
  }
 
- mat-sidenav-content{
+ /* mat-sidenav-content{
   overflow:hidden;
- }
+ } */
 
  .example-spacer {
     flex: 1 1 auto;

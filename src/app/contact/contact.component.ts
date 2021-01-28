@@ -7,11 +7,14 @@ import { HttpClient } from '@angular/common/http';
 import {HttpParams} from '@angular/common/http';
 import {HttpHeaders} from '@angular/common/http';
 
+
+
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css']
 })
+
 export class ContactComponent implements OnInit {
   
   faPaperPlane = faPaperPlane;
@@ -31,11 +34,11 @@ export class ContactComponent implements OnInit {
     });
   }
 
+  
 
   constructor(private formBuilder: FormBuilder, private http: HttpClient) { 
     
     this.createContactForm() 
-
     // this.contactForm = this.formBuilder.group({
     //   id:['0'],
     //   fullname: [''],  
@@ -71,6 +74,10 @@ export class ContactComponent implements OnInit {
     )
 
 }
+
+
+
+
 
 
 

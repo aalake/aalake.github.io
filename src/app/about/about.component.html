@@ -11,13 +11,14 @@
         </mat-card>
     </div>
 
-    <div class="skills"  fxLayout="row wrap" fxLayoutGap="15px grid" >
+    <div class="skills" fxLayout="row wrap" fxLayoutGap="15px grid">
         
-        <div fxFlex="12%" fxFlex.xs="100%" fxFlex.sm="100%" fxFlex.md="50%" fxFlex.lg="50%" *ngFor="let items of mySkills">
+        <div fxFlex="50%" fxFlex.xs="100%" fxFlex.sm="100%" fxFlex.md="50%" fxFlex.lg="50%" *ngFor="let items of mySkills">
             <!-- <div fxFlex="12%" fxFlex.xs="100%" fxFlex.sm="50%" fxFlex.md="25%" fxFlex.lg="25%" *ngFor="let items of mySkills"> -->
             <mat-card fxFlex.lt-lg="100%" fxFlex.gt-md="100%">
                 <mat-card-title>{{items.title}}</mat-card-title>
                 
+                <mat-icon><div *ngFor="let icons of items.icons"><fa-icon [icon]="icons"></fa-icon></div></mat-icon>
                 <mat-card-content *ngFor="let skills of items.skills">
                    <ul>
                        <li> 

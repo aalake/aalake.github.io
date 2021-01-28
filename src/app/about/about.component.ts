@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AboutData } from '../data/about.data'
-import { faJsSquare, faNodeJs, faAws, faJava, faCss3Alt, faHtml5, faAngular } from '@fortawesome/free-brands-svg-icons'; 
-import { faDatabase, faCodeBranch, faCubes, faTerminal,faLink,faDotCircle, faTasks } from '@fortawesome/free-solid-svg-icons'; 
+import { faJsSquare, faNodeJs, faAws, faJava, faCss3Alt, faHtml5, faAngular, faGit, faVuejs, faPhp } from '@fortawesome/free-brands-svg-icons'; 
+import { faDatabase, faCodeBranch, faCubes, faTerminal,faLink,faDotCircle, faTasks, faAngleRight, faFileCode, faLaptopCode } from '@fortawesome/free-solid-svg-icons'; 
 import { IAbout } from '../models/about'
 import { ISkills } from '../models/skills'
 
@@ -27,7 +27,12 @@ export class AboutComponent implements OnInit {
    faLink = faLink;
    faTasks = faTasks; 
    faDotCircle = faDotCircle; 
-
+   faAngleRight = faAngleRight;
+   faGit = faGit; 
+   faFileCode = faFileCode; 
+   faLaptopCode = faLaptopCode;
+   faVuejs = faVuejs; 
+   faPhp = faPhp; 
 
    example = 'fa fab-facebook';
 
@@ -35,10 +40,10 @@ export class AboutComponent implements OnInit {
 
   mySkills: ISkills[] = 
   [
-  {title:'Programming Languages', skills:['Java','Javascript','HTML5', 'CSS3', 'PHP', 'SQL', 'Typescript']},
-  {title:'Libraries & Frameworks',skills:['Angular','Node.js','Express.js']},
-  {title:'Tools & Platforms', skills:['Git(Github)','Visual Studio Code','MySQL','SQL Server', 'Mac', 'iOS', 'Windows', 'Linux']},
-  {title:'Working Knowledge',skills:['PHP','AWS','Vue.js']}
+    {title:'Programming Languages', skills:['Java','Javascript','HTML5', 'CSS3', 'Typescript', 'SQL'], icons:[faJava,faJsSquare,faHtml5,faCss3Alt,faDotCircle, faDatabase]},
+    {title:'Libraries & Frameworks',skills:['Angular','Node.js','Express.js'],icons:[faAngular,faNodeJs, faAngleRight]},
+    {title:'Tools & Platforms', skills:['Git(Github)','Visual Studio Code','MySQL', 'OS - Mac,Windows,Linux'],icons:[faGit,faFileCode,faDatabase, faLaptopCode]},
+    {title:'Working Knowledge',skills:['PHP','AWS','Vue.js'],icons:[faPhp, faAws, faVuejs]}
   ]
 
 

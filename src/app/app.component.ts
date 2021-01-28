@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { faBars } from '@fortawesome/free-solid-svg-icons'; 
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -10,5 +11,8 @@ export class AppComponent {
   title = 'portfolio-app';
 
   faBars = faBars;
+
+  constructor() { }
+
 
 }

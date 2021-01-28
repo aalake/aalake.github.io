@@ -1,13 +1,13 @@
 .footer{
     /* margin: auto; */
-    text-align: center;
+   
     position: absolute;
     
-    height: 35px;
+    height: 100px;
     bottom: 0px; 
     width: 100%;
     /* padding-top: 500px; */
-    /* background-color: grey; */
+    background-color: green;
     
 }
 
@@ -15,4 +15,17 @@
     text-decoration: none;
     /*color: #017038;*/
     color: #287494;
+}
+
+.credits{
+     text-align: center;
+}
+
+ 
+ .modal-header {
+    border-bottom: 0 none;
+}
+
+.modal-footer {
+    border-top: 0 none;
 }

@@ -1,171 +1,3 @@
-/* p{
-    text-align: center;
-} */
-
-h1{
-    text-align: center;
-}
-
-/* css to make my profile picture round */
-img.profile-img{
-    
-    width: auto;
-    height: auto;  
-    max-width: 96px;  
-    max-height: 96px;
-    clip-path: circle(40% at 50% 60%);
-    /* float: left; */
-    
-}
-
-/* my description of myself*/
-/* .description{
-    width: 80%;
-    height: 60%;
-    position: relative; */
-    /*left:10%;*/ /*moves description to the right*/
-   /* top: 30px;*/
-    /* text-align: center; */
-    
-/*}*/
-
-/* These are all the cards for skills */
-#skills-card{   
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  padding-top: 5px; 
-  padding-left: 10px;
-  width: 270px;
-  height: 400px;  
-  background-color: #f9f9f9;
-  box-shadow: 1px 1px 5px grey;
-  float: left;
-  margin: 1%;
-  position: relative;
-  left: 15%; /*move cards to the right*/
-  /* padding:10px; */
-}
-
-#cards{
-    margin: 5%; /* space between description and cards */
-}
-
-#skills-label{
-    display: block;
-    text-align: center; 
-    font-weight: bold;
-}
-
-#skills-rows{
-    padding-left: 20px;
-}
-
-li{
-    list-style-type: none;
-}
-
-/* Temporary */
-fa-icon{
-    font-size: 25px; 
-    line-height: 40px;
-    vertical-align: middle;
-}
-
-#myskillslabel{
-    padding: 20px;
-    font-size: 15px;
-    
-}
-
-h4{
-    text-align: center;
-    padding-top: 0px;
-    color: blue;
-}
-
-/*#background-js{*/ /* This is the black background for JS icon */
-    /* background-size: 15px;
-    height: 15px;
-    width: 20px; */
-    /*background-color: #323330;*/ /* color for JS letters in icon */
-    /*position: relative;*/
-    /* bottom: 500px; */
-    /* top: 97px;
-    left: 225px;
-    z-index: -1px;
-} */
-
-#js-icon{ /* this is to make the js icon above the black background-js */
-    z-index: 1px;
-    position: relative;
-    /* color: #F0DB4F; */
-}
-
-#ts-icon{ /* TS Icon is actually an image until font awesome creates an official TS Icon*/
-    width: 22px;
-    height: 22px;
-    vertical-align: middle;
-    padding-bottom: 10px;
-    border-radius: 10%;
-}
-
-#css-icon{
-    color: #264de4;
-}
-
-#html-icon{
-    color: #E44D26
-}
-
-#angular-icon{
-    color:#a6120d
-}
-
-#node-icon{
-    /* color: #3c873a; */
-    color:#68a063;
-}
-
-#aws-icon{
-    color: #232F3E;
-}
-
-#database-icon{
-    color: #572A59;
-}
-
-#cude-icon{
-    color: #5382a1;
-}
-
-#java-icon{
-    color: #5382a1;
-}
-
-#git-icon{
-    color: #f34f29;
-}
-
-#agile-icon{
-    color: #3D0101;
-}
-
-#datastructure-icon{
-    color: #514605;
-}
-
-#restapi-icon{
-    color: #004C68;
-}
-
-#cli-icon{
-    color: #416B01;
-}
-
-
-
-/* Use everything below, omit above */
-
-
 
 .description mat-card{
     /* margin-bottom: 50px; */
@@ -177,6 +9,7 @@ h4{
 
 .about-container{
  padding: 16px; 
+ margin-right: 0px !important; /*temporary - look into better solution to deal with fxLayoutGap grid mode issues*/
 }
 
  .skills mat-card{
@@ -188,4 +21,20 @@ h4{
 mat-card-title{
     font-size: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+fa-icon{
+    font-size: 19px; 
+    line-height: 31px;
+    vertical-align:middle;
+    float: left;
+    align-items:center; 
+    position: relative; 
+    top: 23px; 
+}
+
+.skills li{
+    list-style-type: none;
+    margin-right: 0%;
+    line-height: 15px;
 }

@@ -1,10 +1,9 @@
 
-<!-- <app-header></app-header> -->
-<!-- <router-outlet></router-outlet> -->
-
 <div> 
   <!-- <mat-toolbar style="background-color:white; border-bottom: 1px solid lightgrey; ">-->
-    <mat-toolbar style="background-color: #FFF;">
+  <mat-sidenav-container fullscreen>
+    <mat-sidenav-content  style="background-color: #FFF;">
+     <mat-toolbar style="background-color: #FFF;">
       <!-- <div fxShow="true" fxHide.gt-sm="true">
         <button mat-icon-button (click)="sidenav.toggle()">
           <mat-icon><fa-icon [icon]="faBars"></fa-icon></mat-icon>
@@ -23,7 +22,9 @@
 
         <a routerLink="/portfolio"><span class="num">01.</span> Portfolio</a>
         <a routerLink="/about"><span class="num">02.</span>About</a>
-        <a routerLink="/contact"><span class="num">03.</span> Contact</a>
+        <!-- <a routerLink="/contact"><span class="num">03.</span> Contact</a>  -->
+        <a href="/assets/files/ALResume21.pdf" rel="noopener noreferrer" target="_blank">Resume</a>
+        
         
 
       </div>
@@ -38,9 +39,13 @@
 
 
     </mat-toolbar>
-    <mat-sidenav-container fxFlexFill class="example-container">
+    <!-- <mat-sidenav-container fxFlexFill class="example-container"> -->
   
-      <mat-sidenav color="primary" #sidenav fxLayout="column" mode="over"  opened="false" fxHide.gt-sm="true" position="end"> <!--position="end" opens side nav on right, default is left or position="start"-->
+      
+      
+        <router-outlet></router-outlet>
+        <app-footer></app-footer>
+      </mat-sidenav-content><mat-sidenav color="primary" #sidenav fxLayout="column" mode="over"  opened="false" fxHide.gt-sm="true" position="end"> <!--position="end" opens side nav on right, default is left or position="start"-->
         <div fxLayout="column">
           <a mat-button routerLink="/portfolio" (click)="sidenav.close()">Portfolio</a>
           <a mat-button routerLink="/about" (click)="sidenav.close()">About</a>
@@ -48,14 +53,11 @@
           
         </div>
       </mat-sidenav>
-      <mat-sidenav-content fxFlexFill style="background-color: #FFF;">
-        <router-outlet></router-outlet>
-      </mat-sidenav-content>
     </mat-sidenav-container>
   </div>
 
-<!-- <app-footer></app-footer> -->
 
 
 
 
+  
