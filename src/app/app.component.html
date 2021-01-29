@@ -54,13 +54,13 @@
     <router-outlet></router-outlet>
       </main>
 
-    <footer style="background-color: green;" fxFlexOffset="auto">
+    <footer  fxLayout="row" fxLayout.xs="column" fxFlexOffset="auto" fxLayoutGap.xs="15px" fxLayoutGap="0px">
        
-          <div class="contact-modal">
+          <div class="contact-modal" fxFlex="40" fxFlexAlign="center">
             <ng-template #content let-modal>
             
                 <div class="modal-header">
-                    <h4 class="modal-title">Modal title</h4>
+                    <h4 class="modal-title">Contact me</h4>
                     <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
                       <span aria-hidden="true">&times;</span>
                     </button>
@@ -80,15 +80,17 @@
               </ng-template>
               
               <!--mat-button is here temporary - I will probably style button better later-->
-              <button class="modal-button" (click)="openVerticallyCentered(content)">Contact</button>
+              <button class="modal-button" (click)="openVerticallyCentered(content)">Contact me</button>
             </div>  
             
-            <div class="credits">
-            <p><span>Designed & Built by </span> <a href="mailto:akeemlake@outlook.com" rel="noopener noreferrer" target="_blank">Akeem Lake</a></p>
-          <!-- <p><fa-icon [icon]="faGithubAlt"></fa-icon></p> --> <!--Property bind to font awesome icon-->
-           <!--  <p><fa-icon [icon]="faCodeBranch"></fa-icon></p>--> <!--Property bind to font awesome icon -->
-            <p><fa-icon [icon]="faGitAlt"></fa-icon></p> <!-- Property bind to font awesome icon -->
-            
+            <div class="credits" fxFlex="60" fxFlexAlign="center">
+              
+           <span><a href="https://github.com/aalake/aalake.github.io" rel="noopener noreferrer" target="_blank"><fa-icon [icon]="faCodeBranch" atl="github" title="github"></fa-icon></a> built & maintained by </span>
+           <a href="mailto:akeemlake@outlook.com" rel="noopener noreferrer" target="_blank">Akeem Lake</a>
+            <!--Property bind to font awesome icon-->
+            <!-- <p><fa-icon [icon]="faGithubAlt"></fa-icon> </p> -->
+           <!--  <p></p>--> <!--Property bind to font awesome icon -->
+         <!-- <p><fa-icon [icon]="faGitAlt"></fa-icon></p> --> <!-- Property bind to font awesome icon -->
             </div>
     
     </footer>
