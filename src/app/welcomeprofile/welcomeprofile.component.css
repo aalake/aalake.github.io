@@ -19,9 +19,9 @@ mat-card{
     
 }
 
-/* mat-card-title{
-    font-size: 70px; 
-} */
+mat-card-title{
+    line-height: 1;
+}
 
 .title, .greeting, .name{
     font-size: 85px;

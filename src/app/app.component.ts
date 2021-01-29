@@ -1,5 +1,11 @@
 import { Component } from '@angular/core';
-import { faBars } from '@fortawesome/free-solid-svg-icons'; 
+import { faBars, faCodeBranch } from '@fortawesome/free-solid-svg-icons'; 
+
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { EventEmitter,Output, Input, AfterViewInit } from '@angular/core';
+import { Router, Routes, RouterModule } from '@angular/router'
+import {faGithubAlt, faGitAlt} from '@fortawesome/free-brands-svg-icons'
+
 
 
 @Component({
@@ -11,8 +17,29 @@ export class AppComponent {
   title = 'portfolio-app';
 
   faBars = faBars;
+  faGithubAlt = faGithubAlt;
+  faCodeBranch = faCodeBranch;
+  faGitAlt = faGitAlt;
+  // constructor() { }
 
-  constructor() { }
+
+  
+
+  constructor(private modalService: NgbModal, private router: Router) {}
+
+  @Output() modalClose : EventEmitter<any> = new EventEmitter<any>();
+
+  closeModal( $event ) {
+    this.router.navigate([{outlets: {contact: null}}]);
+    this.modalClose.next($event);
+  }
+ 
+  openVerticallyCentered(content) {
+  this.modalService.open(content, { centered: true });
+  }
+
+
+
 
 
 }

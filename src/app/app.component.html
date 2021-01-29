@@ -2,15 +2,23 @@
 <div> 
   <!-- <mat-toolbar style="background-color:white; border-bottom: 1px solid lightgrey; ">-->
   <mat-sidenav-container fullscreen>
-    <mat-sidenav-content  style="background-color: #FFF;">
-     <mat-toolbar style="background-color: #FFF;">
-      <!-- <div fxShow="true" fxHide.gt-sm="true">
-        <button mat-icon-button (click)="sidenav.toggle()">
-          <mat-icon><fa-icon [icon]="faBars"></fa-icon></mat-icon>
-        </button>
-      </div> -->
+
+    <mat-sidenav color="primary" #sidenav fxLayout="column" mode="over"  opened="false" fxHide.gt-sm="true" position="end"> <!--position="end" opens side nav on right, default is left or position="start"-->
+      <div fxLayout="column">
+        <a mat-button routerLink="/portfolio" (click)="sidenav.close()">Portfolio</a>
+        <a mat-button routerLink="/about" (click)="sidenav.close()">About</a>
+        <!-- <a mat-button routerLink="/contact" (click)="sidenav.close()">Contact</a> -->
+        <a mat-button href="/assets/files/ALResume21.pdf" rel="noopener noreferrer" target="_blank">Resume</a>    
+      </div>
+    </mat-sidenav>
+
+<mat-sidenav-content  style="background-color: #FFF;" fxLayout="column">
+     
+  <header>
+    <mat-toolbar style="background-color: #FFF;">
+      
       <a class="companyName" routerLink="/">
-        <a class="logo">Akeem Lake</a>
+      <a class="logo">Akeem Lake</a>
       </a>
 
       <span class="links-spacer"></span> <!-- Puts space between links and logo -->
@@ -39,24 +47,59 @@
 
 
     </mat-toolbar>
+  </header>
     <!-- <mat-sidenav-container fxFlexFill class="example-container"> -->
   
-      
-      
-        <router-outlet></router-outlet>
-        <app-footer></app-footer>
-      </mat-sidenav-content><mat-sidenav color="primary" #sidenav fxLayout="column" mode="over"  opened="false" fxHide.gt-sm="true" position="end"> <!--position="end" opens side nav on right, default is left or position="start"-->
-        <div fxLayout="column">
-          <a mat-button routerLink="/portfolio" (click)="sidenav.close()">Portfolio</a>
-          <a mat-button routerLink="/about" (click)="sidenav.close()">About</a>
-          <a mat-button routerLink="/contact" (click)="sidenav.close()">Contact</a>
-          
-        </div>
-      </mat-sidenav>
-    </mat-sidenav-container>
-  </div>
+      <main class="content">
+    <router-outlet></router-outlet>
+      </main>
+
+    <footer style="background-color: green;" fxFlexOffset="auto">
+       
+          <div class="contact-modal">
+            <ng-template #content let-modal>
+            
+                <div class="modal-header">
+                    <h4 class="modal-title">Modal title</h4>
+                    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  
+                  <div class="modal-body">
+                  
+                    <p><app-contact></app-contact></p>
+              
+              
+              
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
+                  </div>
+              
+              </ng-template>
+              
+              <!--mat-button is here temporary - I will probably style button better later-->
+              <button class="modal-button" (click)="openVerticallyCentered(content)">Contact</button>
+            </div>  
+            
+            <div class="credits">
+            <p><span>Designed & Built by </span> <a href="mailto:akeemlake@outlook.com" rel="noopener noreferrer" target="_blank">Akeem Lake</a></p>
+          <!-- <p><fa-icon [icon]="faGithubAlt"></fa-icon></p> --> <!--Property bind to font awesome icon-->
+           <!--  <p><fa-icon [icon]="faCodeBranch"></fa-icon></p>--> <!--Property bind to font awesome icon -->
+            <p><fa-icon [icon]="faGitAlt"></fa-icon></p> <!-- Property bind to font awesome icon -->
+            
+            </div>
+    
+    </footer>
+
+  </mat-sidenav-content>      
+</mat-sidenav-container>
+</div>
 
 
+   
+  
 
 
 

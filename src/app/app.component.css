@@ -52,3 +52,36 @@ mat-sidenav-container {
     color: #1C9AD0;
     }
 
+  
+  .contact-modal{
+      float: left;
+  }
+  
+  .credits{
+       text-align: center;
+  }
+  
+   
+   .modal-header {
+      border-bottom: 0 none;
+  }
+  
+  .modal-footer {
+      border-top: 0 none;
+  }
+  
+  .modal-button{
+        cursor: pointer; 
+        border: none; 
+        background-color: transparent;
+        /* box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);  */
+  }
+
+  footer{
+    /* margin-top: 50%; */
+  }
+
+  .content{
+    /* padding-bottom: 2.5rem;  */
+    padding-bottom: 10% ;
+  }
