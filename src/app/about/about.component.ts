@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AboutData } from '../data/about.data'
 import { faJsSquare, faNodeJs, faAws, faJava, faCss3Alt, faHtml5, faAngular, faGit, faVuejs, faPhp } from '@fortawesome/free-brands-svg-icons'; 
-import { faDatabase, faCodeBranch, faCubes, faTerminal,faLink,faDotCircle, faTasks, faAngleRight, faFileCode, faLaptopCode } from '@fortawesome/free-solid-svg-icons'; 
+import { faDatabase, faCodeBranch, faCubes, faTerminal,faLink,faDotCircle, faTasks, faAngleRight, faFileCode, faLaptopCode, faChevronRight } from '@fortawesome/free-solid-svg-icons'; 
 import { IAbout } from '../models/about'
 import { ISkills } from '../models/skills'
 
@@ -32,7 +32,8 @@ export class AboutComponent implements OnInit {
    faFileCode = faFileCode; 
    faLaptopCode = faLaptopCode;
    faVuejs = faVuejs; 
-   faPhp = faPhp; 
+   faPhp = faPhp;
+   faChevronRight = faChevronRight; 
 
    example = 'fa fab-facebook';
 

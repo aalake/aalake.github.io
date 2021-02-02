@@ -4,7 +4,7 @@ import { faBars, faCodeBranch } from '@fortawesome/free-solid-svg-icons';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { EventEmitter,Output, Input, AfterViewInit } from '@angular/core';
 import { Router, Routes, RouterModule } from '@angular/router'
-import {faGithubAlt, faGitAlt} from '@fortawesome/free-brands-svg-icons'
+import {faGithubAlt, faGitAlt, faLinkedin} from '@fortawesome/free-brands-svg-icons'
 
 
 
@@ -20,6 +20,7 @@ export class AppComponent {
   faGithubAlt = faGithubAlt;
   faCodeBranch = faCodeBranch;
   faGitAlt = faGitAlt;
+  faLinkedin = faLinkedin;
   // constructor() { }
 
 

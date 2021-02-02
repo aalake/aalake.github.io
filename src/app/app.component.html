@@ -57,9 +57,11 @@
     <footer  fxLayout="row" fxLayout.xs="column" fxFlexOffset="auto" fxLayoutGap.xs="15px" fxLayoutGap="0px">
        
           <div class="contact-modal" fxFlex="40" fxFlexAlign="center">
-            <ng-template #content let-modal>
             
-                <div class="modal-header">
+            <span class="in-touch">Get in touch: </span>           
+            <ng-template #content let-modal>
+                 
+                   <div class="modal-header">
                     <h4 class="modal-title">Contact me</h4>
                     <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
                       <span aria-hidden="true">&times;</span>
@@ -68,7 +70,7 @@
                   
                   <div class="modal-body">
                   
-                    <p><app-contact></app-contact></p>
+                    <app-contact></app-contact>
               
               
               
@@ -78,9 +80,18 @@
                   </div>
               
               </ng-template>
-              
+            
               <!--mat-button is here temporary - I will probably style button better later-->
-              <button class="modal-button" (click)="openVerticallyCentered(content)">Contact me</button>
+              <button  class="modal-button" (click)="openVerticallyCentered(content)">Contact me</button>
+              
+
+              <!-- <div class="button"> -->
+                <a href="https://github.com/aalake" class="icon" rel="noopener noreferrer" target="_blank"><fa-icon [icon]="faGithubAlt" atl="github" title="github"></fa-icon></a>
+              <!-- </div> -->
+              <!-- <div class="button"> -->
+                <a href="https://www.linkedin.com/in/akeemlake" class="icon" rel="noopener noreferrer" target="_blank"><fa-icon [icon]="faLinkedin" alt="linkedin" title="linkedin"></fa-icon></a>
+             <!-- </div> -->
+
             </div>  
             
             <div class="credits" fxFlex="60" fxFlexAlign="center">

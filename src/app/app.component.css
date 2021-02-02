@@ -55,6 +55,7 @@ mat-sidenav-container {
   
   .contact-modal{
       float: left;
+      background-color: blue;
   }
   
   .credits{
@@ -63,7 +64,7 @@ mat-sidenav-container {
   }
   
    
-   .modal-header {
+  .modal-header {
       border-bottom: 0 none;
   }
   
@@ -75,6 +76,12 @@ mat-sidenav-container {
         cursor: pointer; 
         border: none; 
         background-color: transparent;
+        /* background-color: blueviolet; */
+        border-style: solid;
+        border-color: #2196F3;
+        color: dodgerblue;
+        border-radius: 6px;
+        border-width: 2px;
         /* box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);  */
   }
 
@@ -82,12 +89,29 @@ mat-sidenav-container {
     /* margin-top: 50%; */
     /* padding: 5px; */
     height: auto;
-    min-height: 50px;
+    min-height: 70px;
+    background-color: green;
+    
   }
 
   .content{
     padding-bottom: 2.5rem; 
     /* padding-bottom: 0%; */
+    
+  }
+
+  .in-touch{
+     /* text-align: center; */
+     /* align-items: center; */
+     margin-left: 10px;
+     background-color: blanchedalmond;
+     font-size: 17px;
+  }
+
+  .icon{
+    padding: 5px;
+    font-size: 20px;
+    /* align-items: center; */
   }
 
   
