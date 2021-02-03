@@ -41,7 +41,8 @@ fa-icon{
 
 .fade_rule {
     height: 1px;
-    background-color: #E6E6E6;
+    background-color: lightgray;
+    /* background-color: #E6E6E6; */
     /* max-width: 580px;  */ /*used to maximize width of bottom line*/
     margin: 0 auto;
     text-align: center;
@@ -58,18 +59,28 @@ fa-icon{
     float: left; /* floats image to right of text and text will wrap around image */
     margin-right: 30px; /* gives space to right of image */
     margin-bottom: 20px; /* gives space to bottom of image*/ 
-    padding: 100px; /* pads inside of element */
+    /*padding: 100px;*/ /* pads inside of element */
     /* position: relative; */
-    width: 250px; /* width of box */
-    height: 250px; /* height of box */
+    width: 250px; /* width of box 250px*/
+    height: 250px; /* height of box 250px*/
     background: navy;
-    border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+    /* border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ; */
+    border-radius: 2% ;
     color: white;
     /* box-shadow: 20px 20px rgba(0,0,0,.15);  */
     box-shadow: 20px 20px 0 0px rgba(255, 255, 255), 20px 20px 0 1px black; /* this creates two separate box shadows one behind the other */
     transition: all .3s ease;
   }
 
+img{
+    /* max-width: 100%;
+    height: auto;*/   
+    max-width:auto;
+    height:100%;
+    min-width: 250px;
+    min-height: 250px;
+    border-radius: 2%;
+  }
  
   #myimg:hover {
     /* border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ; */
@@ -80,6 +91,8 @@ fa-icon{
     creates zoom out effect */
   }
 
+  
+
   /* arrows */
   .skills-list::before{
       content: '\25B9';
@@ -89,15 +102,25 @@ fa-icon{
   }
 
   /* heading right line */
-  .description mat-card-title::after{
+  /* .description mat-card-title::after{
     display: inline-block;
     content: "";
     border-top: 1px solid lightgray;
-    width: 500px;
+    width: 100%;
     min-width: 100px;
-    top: 15px;
-    margin: 0 1rem;
-    transform: translateY(-4px);
+    top: 15px; */
+    /* margin: 0 1rem; */
+    /* transform: translateY(-4px); */
+    /* transform: translateY(16px); */
+  /* } */
+
+  .description mat-card-title::after{
+    display: inline-block;
+    content:"";
+    width: 100%;
+    height: 15px;
+    border-top: 1px solid lightgray;
+    z-index: -1;
   }
 
 
@@ -121,3 +144,5 @@ fa-icon{
     
 
   }
+
+  

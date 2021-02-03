@@ -12,10 +12,10 @@
       </div>
     </mat-sidenav>
 
-<mat-sidenav-content  style="background-color: #FFF;" fxLayout="column">
+<mat-sidenav-content  style="background-color: navy;" fxLayout="column">
      
   <header>
-    <mat-toolbar style="background-color: #FFF;">
+    <mat-toolbar style="background-color: navy;">
       
       <a class="companyName" routerLink="/">
       <a class="logo">Akeem Lake</a>
@@ -54,9 +54,9 @@
     <router-outlet></router-outlet>
       </main>
 
-    <footer  fxLayout="row" fxLayout.xs="column" fxFlexOffset="auto" fxLayoutGap.xs="15px" fxLayoutGap="0px">
+    <footer  fxLayout="row" fxLayout.xs="column" fxFlexOffset="auto" fxLayoutGap.xs="15px" fxLayoutGap="0px"> 
        
-          <div class="contact-modal" fxFlex="40" fxFlexAlign="center">
+          <div class="contact-modal" fxFlex="1 1 33" fxFlexAlign="center">
             
             <span class="in-touch">Get in touch: </span>           
             <ng-template #content let-modal>
@@ -69,12 +69,9 @@
                   </div>
                   
                   <div class="modal-body">
-                  
                     <app-contact></app-contact>
-              
-              
-              
                   </div>
+
                   <div class="modal-footer">
                     <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
                   </div>
@@ -94,7 +91,7 @@
 
             </div>  
             
-            <div class="credits" fxFlex="60" fxFlexAlign="center">
+            <div class="credits" style="text-align: center;"fxFlex="1 1 33"  fxFlexAlign="center">
               
            <span><a href="https://github.com/aalake/aalake.github.io" rel="noopener noreferrer" target="_blank"><fa-icon [icon]="faCodeBranch" atl="github" title="github"></fa-icon></a> built & maintained by </span>
            <a href="mailto:akeemlake@outlook.com" rel="noopener noreferrer" target="_blank">Akeem Lake</a>
@@ -104,7 +101,9 @@
          <!-- <p><fa-icon [icon]="faGitAlt"></fa-icon></p> --> <!-- Property bind to font awesome icon -->
             </div>
     
-    </footer>
+            <div class="right-space" fxFlex="2 2 33"> <!--this should and will be empty--></div>
+  
+      </footer>
 
   </mat-sidenav-content>      
 </mat-sidenav-container>

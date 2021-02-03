@@ -3,14 +3,9 @@
     box-sizing: border-box;
   } 
 
-input{
-    margin: 5px; 
-}
-
-/* label{
-    font-weight: bold;
-} */
-
+/*input{
+     margin: 5px;  
+}*/
 
 .submit-button{
     background-color: Transparent;
@@ -29,18 +24,16 @@ button:hover{
 }
 
 mat-form-field {
-    width: 90%; /* Increse width of the input areas */
-    /* height: 150px; */
+    width: 100%; /* Increse width of the input areas */
   }
 
   
 textarea{
-    height: 150px;
+    height: 100px;
 }
 
 
 mat-card-title{
-    /* text-align: center; */
     font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif;
 }
 
@@ -54,48 +47,15 @@ img.profile-img{
         clip-path: circle(40% at 50% 60%);
         float: left;
         position: relative; /* to allow to move profile pic */
-        bottom: 25px; /* moves higher with higher value and down with lower value */
-       
+        bottom: 25px; /* moves higher with higher value and down with lower value */       
 }
 
-#contactbelow{
-    background-color: #d8d8d8d8;
-    width: 450px;
-    padding: 0;
-    /* margin-right: 100px; */
-    border: none;
-    height: 1px;
-    
-    float: left;
-    /* align hr center */
-    display: block; 
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.card-desc{
-   margin-left: 80px; /*gives space between profile pic and description */
-    max-width: 500px;
-    font-size: 20px;
-}
 
  #forms{ 
-     /* background-color: #f9f9f9; */
-    
-    padding: 50px;
-    /* border-radius: 5%;  */
+    padding: 25px;
     font-size: 25px;
-    /* position: relative;  */
-    
-    /* left:600px; Position form to the left */
-    /*margin-top: 80px;*/ /*moves forms div x value from the top, higher the value the further away it is from the top of page*/
-    /*right: 400px;*/ /* Position form to the right*/
-    /* width: 50%; */
-    /* float: left; */
-   /* margin-left: 100px; */ /* temp until I fix contactpage div */
-   min-width: 40%;
-   margin-right: 15px;
-   
+    min-width: 40%;
+    margin-right: 15px;
 } 
 
 #form-module{
@@ -108,33 +68,3 @@ img.profile-img{
     margin-left: 1%;
 }
 
-
-/* .contactpage:after {
-    content: "";
-    display: table;
-    clear: both;
-  } */
-
-
-#contact-card mat-card{
-     min-height: 400px; 
-     margin-right: 15px;
-}
-
-#testform mat-card{
-    min-width: 40%;
-    margin-right: 15px;
-    border-radius: 5%;
-    padding: 50px;
-    font-size: 25px;
-}
-
-/* @media screen and (min-width: 2300px) {
-    #contact-card{
-        max-width: 800px ;
-    }
-  } */
-
-
-
- 
