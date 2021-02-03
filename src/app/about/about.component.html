@@ -8,34 +8,40 @@
         <mat-card class="mat-elevation-z0">
             <mat-card-title>About Akeem</mat-card-title>
             <mat-card-content>
-               <div id="myimg"><img [src]="myimage"></div> 
+               
+                <!-- <div id="myimg"><img [src]="myimage"></div> -->
+
+                <div id="myimg"></div>
+                
                 <!--<div id="myimg">YOOOO</div>--><!--This will be image, grey-out image slightly with theme color to signal that it should be hovered-->
-                {{AboutData.description[0]}}
-                {{AboutData.description[1]}}
-                {{AboutData.description[1]}}
-                {{AboutData.description[1]}}
-                {{AboutData.description[1]}}
-                {{AboutData.description[1]}}
-                {{AboutData.description[1]}}
-                {{AboutData.description[1]}}
-                <br><br><br>
+                <p>I'm a developer based in Miami, Florida and a graduate of the Florida International University class of December 2020. While at FIU, I was 
+                    exposed to various courses on my way to attaining my Bachelor's of Science in Computer Science. These courses include: <span class="courses">Data Structures, Programming Languages, Database Systems/Administration, 
+                    Software Engineering(Agile, Project Management, Team-focus), as well as other courses involving Intepersonal skills.</span>
+                    In addition, I have 7 years experience in a professional setting. 
+                   </p> 
+
+                   <h3><fa-icon class="title-icon" [icon]="faCaretRight"></fa-icon>Developer</h3>
+                   <p>
+                    Most recently I've been apart of a team, with the <span class="company-name">Pinecrest PD</span>, that developed applications to improve
+                    community outreach on criminal activity. While being on the team, my role involved
+                    developing on the frontend using technologies such as: <span class="description-highlight">Angular(Typescript), HTML5, CSS3, Material UI & 
+                    Bootstrap. Our environment and how we monitored the development progress was done using an Agile(Scrum) approach.</span>
+                   </p>
+
+                   <h3><fa-icon class="title-icon" [icon]="faCaretRight"></fa-icon>IT Associate</h3>
+                   <p>
+                    I worked on an IT team at <span class="company-name">Elite IR</span>, where I was tasked with <span class="description-highlight">trouble-shooting various
+                    computer hardware issues</span>, as well as, working with CRM's like <span class="description-highlight">Salesforce & SugarCRM</span>,
+                    which were used as databases for the company's marketing department. This involved storing and managing
+                    marketing outreach information on a system and keeping this information safe and secure.  
+                   </p>
+                <br>
                 <div class="fade_rule"></div>
-                <br><br><br>
+                <br>
             </mat-card-content>
        <!-- <br><br><br>
          <div class="fade_rule"></div>
         <br><br><br> -->
-        <!-- {{AboutData.description[2]}}
-        {{AboutData.description[1]}}
-        {{AboutData.description[0]}}
-        {{AboutData.description[1]}}
-        {{AboutData.description[2]}}
-        {{AboutData.description[1]}}
-        {{AboutData.description[1]}}
-        {{AboutData.description[1]}}
-        {{AboutData.description[1]}} -->
-
-
         </mat-card>
         
     </div>
@@ -44,10 +50,11 @@
         
         <div fxFlex="50%" fxFlex.xs="100%" fxFlex.sm="100%" fxFlex.md="50%" fxFlex.lg="50%" *ngFor="let items of mySkills">
             <!-- <div fxFlex="12%" fxFlex.xs="100%" fxFlex.sm="50%" fxFlex.md="25%" fxFlex.lg="25%" *ngFor="let items of mySkills"> -->
-            <mat-card fxFlex.lt-lg="100%" fxFlex.gt-md="100%" class="mat-elevation-z0" >
+            <!-- <mat-card fxFlex.lt-lg="100%" fxFlex.gt-md="100%" class="mat-elevation-z0"> -->
+                <mat-card fxFlex.lt-lg="100%" fxFlex.gt-md="100%">
                 <mat-card-title>{{items.title}}</mat-card-title>
                 
-                <mat-icon><div *ngFor="let icons of items.icons"><fa-icon [icon]="icons"></fa-icon></div></mat-icon>
+                <!-- <mat-icon><div class="skills-icons" *ngFor="let icons of items.icons"><fa-icon [icon]="icons"></fa-icon></div></mat-icon> -->
                 <mat-card-content *ngFor="let skills of items.skills">
                    <ul class="skills-list">
                        <li > 

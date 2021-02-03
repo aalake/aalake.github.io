@@ -17,3 +17,7 @@ h1{
   mat-card-content{
     margin-top: 15px;
   }
+
+  .details-title{
+    font-weight: bold;
+  }
