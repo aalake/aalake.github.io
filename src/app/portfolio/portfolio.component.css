@@ -23,8 +23,51 @@ h3{
   }
 
     
-img:hover{
+/* img:hover{
   opacity: 0.6;
   transition: all 0.3s ease-in; 
+} */
+
+
+
+
+img{
+  margin-top: 0% !important;
 }
 
+
+
+.text-center {
+  transition: all .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay:hover .image {
+  opacity: 0.5;
+}
+
+.overlay:hover .text-center {
+  opacity: 1;
+  
+}
+
+.text {
+ background-color: rgba(0,0,0,0.5);
+ color: #fff;
+ font-size: 12px;
+ font-weight: bold;
+ font-family: 'Courier New', Courier, monospace;
+}
+
+.overlay span{
+  display: inline-block; /* prevent break between words in text span */
+  border-radius: 5%;
+  margin: 0.5rem 0.5rem;
+  padding: 0.5rem 1.0rem;
+}

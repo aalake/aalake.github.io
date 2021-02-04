@@ -7,10 +7,12 @@
     <mat-card>
         <mat-card-title>{{project.title}}</mat-card-title>
        
-        
-       <img mat-card-image src="assets/images/create-a-website-1000w.jpg"/>
-    
-
+        <div class="overlay">
+       <img mat-card-image src="assets/images/create-a-website-1000w.jpg" class="image" alt="Project photo">
+       <div class="text-center">
+        <span class="text" *ngFor="let item of project.techStack">{{item}}</span>
+      </div>
+        </div>
         <!-- <mat-divider><hr></mat-divider> -->
         <!-- <mat-divider></mat-divider> -->
         
@@ -26,7 +28,6 @@
           </mat-expansion-panel-header>
    
          <span class="details-title">Description:</span><p>{{project.description}}</p>
-         <span class="details-title">Stack:</span> <p *ngFor="let item of project.techStack">{{item}}</p>
          <span class="details-title">Contributions:</span><p>{{project.contributions}} </p>
 
         </mat-expansion-panel>
