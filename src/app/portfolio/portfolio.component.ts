@@ -19,8 +19,10 @@ export class PortfolioComponent implements OnInit {
    description: `A web application built under the PPD (Pinecrest Police
     Department) to be used by civilians and police departments, to communicate
     information of crimes and suspicious activities`, 
-   techStack:['Angular','HTML5','Bootstrap','Angular Material UI', 'Java Spring Boot',
-    'RESTFUL API', 'SQL(MSSQL)', 'Git(Github)', 'npm', 'Agile(Scrum)' ],
+  //  techStack:['Angular','HTML5','Bootstrap','Angular Material UI', 'Java Spring Boot',
+  //   'RESTFUL API', 'SQL(MSSQL)', 'Git(Github)', 'npm', 'Agile(Scrum)' ],
+    techStack:['Angular, HTML5, Bootstrap, Angular Material UI','Java Spring Boot, RESTFUL API, SQL(MSSQL)',
+    'Git(Github), npm, VS Code, Agile(Scrum) '],
    contributions:'Frontend (Angular, HTML5, CSS3, Bootstrap, Angular Material UI)'},
 
   { title:'Portfolio Site', 

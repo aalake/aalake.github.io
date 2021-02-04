@@ -1,14 +1,16 @@
-<h1>Portfolio</h1>
+<h3>Portfolio</h3>
 <div class="portfolio-container">
     <div fxLayout="row wrap" fxLayoutGap="16px grid">
-        <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="50%" fxFlex.md="50%" fxFlex.lg="33%"  *ngFor="let project of projects">
+        <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="50%" fxFlex.md="50%" fxFlex.lg="33.3%"  *ngFor="let project of projects">
      
             
     <mat-card>
         <mat-card-title>{{project.title}}</mat-card-title>
        
+        
        <img mat-card-image src="assets/images/create-a-website-1000w.jpg"/>
-       
+    
+
         <!-- <mat-divider><hr></mat-divider> -->
         <!-- <mat-divider></mat-divider> -->
         
@@ -24,7 +26,7 @@
           </mat-expansion-panel-header>
    
          <span class="details-title">Description:</span><p>{{project.description}}</p>
-         <span class="details-title">Stack:</span> <p>{{project.techStack}}</p>
+         <span class="details-title">Stack:</span> <p *ngFor="let item of project.techStack">{{item}}</p>
          <span class="details-title">Contributions:</span><p>{{project.contributions}} </p>
 
         </mat-expansion-panel>

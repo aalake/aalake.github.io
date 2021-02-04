@@ -39,7 +39,7 @@ export class AboutComponent implements OnInit {
 
   mySkills: ISkills[] = 
   [
-    {title:'Programming Languages', skills:['Java','Javascript','HTML5', 'CSS3', 'Typescript', 'SQL']}, /*, icons:[faJava,faJsSquare,faHtml5,faCss3Alt,faDotCircle, faDatabase]},*/
+    {title:'Programming Languages', skills:['Java','Javascript','HTML5','CSS3','Typescript','SQL']}, /*, icons:[faJava,faJsSquare,faHtml5,faCss3Alt,faDotCircle, faDatabase]},*/
     {title:'Libraries & Frameworks',skills:['Angular','Node.js','Express.js']}, /*,icons:[faAngular,faNodeJs, faAngleRight]},*/
     {title:'Tools & Platforms', skills:['Git(Github)','Visual Studio Code','MySQL', 'OS - Mac,Windows,Linux']},/*,icons:[faGit,faFileCode,faDatabase, faLaptopCode]},*/
     {title:'Working Knowledge',skills:['PHP','AWS','Vue.js']}/*,icons:[faPhp, faAws, faVuejs]}*/

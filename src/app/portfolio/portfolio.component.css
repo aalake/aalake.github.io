@@ -1,4 +1,4 @@
-h1{
+h3{
     text-align: center;
 }
 
@@ -21,3 +21,10 @@ h1{
   .details-title{
     font-weight: bold;
   }
+
+    
+img:hover{
+  opacity: 0.6;
+  transition: all 0.3s ease-in; 
+}
+
