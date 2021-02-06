@@ -25,6 +25,7 @@ mat-card-title{
 
 .title, .greeting, .name{
     font-size: 85px;
+    /* font-size: 6rem; */
 }
 
 .title{
@@ -49,10 +50,11 @@ mat-card-title{
     max-width: 500px;
     margin:0 auto;
     text-align: justify;
+
 }
 
 
-img{ 
+img{ /* delete 2-5-2021 */
     width: auto;
     height: auto; 
     max-width: 400px;  

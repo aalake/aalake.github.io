@@ -4,9 +4,11 @@
   <mat-sidenav-container fullscreen>
 
     <mat-sidenav color="primary" #sidenav fxLayout="column" mode="over"  opened="false" fxHide.gt-sm="true" position="end"> <!--position="end" opens side nav on right, default is left or position="start"-->
-      <div fxLayout="column">
+      <div fxLayout="column" >
+        <a mat-button routerLink="/about" (click)="sidenav.close()">Home</a>
         <a mat-button routerLink="/portfolio" (click)="sidenav.close()">Portfolio</a>
         <a mat-button routerLink="/about" (click)="sidenav.close()">About</a>
+        
         <!-- <a mat-button routerLink="/contact" (click)="sidenav.close()">Contact</a> -->
         <a mat-button href="/assets/files/ALResume21.pdf" rel="noopener noreferrer" target="_blank">Resume</a>    
       </div>
@@ -28,8 +30,8 @@
         <a mat-button routerLink="/contact">Contact</a>
         <a mat-button routerLink="/about">About</a> -->
        
-        
-          <a routerLink="/portfolio">Portfolio</a>
+        <a routerLink="/">Home</a>
+        <a routerLink="/portfolio">Portfolio</a>
         <a routerLink="/about">About</a>
         <!-- <a routerLink="/contact"><span class="num">03.</span> Contact</a>  -->
         <a href="/assets/files/ALResume21.pdf" rel="noopener noreferrer" target="_blank">Resume</a>
@@ -56,7 +58,7 @@
        
           <div class="contact-modal" fxFlex="1 1 33" fxFlexAlign="center">
             
-            <span class="in-touch">Get in touch: </span>           
+        <span class="in-touch">Get In Touch: </span>           
             <ng-template #content let-modal>
                  
                    <div class="modal-header">
@@ -91,15 +93,15 @@
             
             <div class="credits" style="text-align: center;"fxFlex="1 1 33"  fxFlexAlign="center">
               
-           <span><a href="https://github.com/aalake/aalake.github.io" rel="noopener noreferrer" target="_blank"><fa-icon [icon]="faGitAlt" atl="github" title="github"></fa-icon></a> built & maintained by </span>
-           <a href="mailto:akeemlake@outlook.com" rel="noopener noreferrer" target="_blank">Akeem Lake</a>
+           <span class="build-maintain"><a href="https://github.com/aalake/aalake.github.io" rel="noopener noreferrer" target="_blank"><fa-icon [icon]="faGitAlt" atl="github" title="github"></fa-icon></a> built & maintained by </span>
+           <a class ="name-link" href="mailto:akeemlake@outlook.com" rel="noopener noreferrer" target="_blank">Akeem Lake</a>
             <!--Property bind to font awesome icon-->
             <!-- <p><fa-icon [icon]="faGithubAlt"></fa-icon> </p> -->
            <!--  <p></p>--> <!--Property bind to font awesome icon -->
          <!-- <p><fa-icon [icon]="faGitAlt"></fa-icon></p> --> <!-- Property bind to font awesome icon -->
             </div>
     
-            <div class="right-space" fxFlex="2 2 33"> <!--this should and will be empty--></div>
+            <div class="right-space" fxFlex="1 1 33"> <!--this should and will be empty--></div>
   
       </footer>
 
