@@ -48,9 +48,9 @@ mat-card{
 .description{
     font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
     /* max-width: 500px; */
-    max-width: 700px;
+    max-width: 600px;
     margin: 0 auto;
-    text-align: justify;
+    /* text-align: justify; */
     font-size: clamp(12px,1vw,20px);
 }
 

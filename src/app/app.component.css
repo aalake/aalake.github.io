@@ -162,21 +162,22 @@ mat-form-field{
 
 
 .shape{
-  background: blue;
-  max-height: 25px;
-  text-align: center;
-  transform:rotate(45deg);
-  max-width: 25px;
-  border-radius: 5%;
+  /* position: fixed; */
+  width:clamp(50px,1vw,50px);
+  height:clamp(40px,1vw,40px);
   
+  border-radius: 50%;
+  background: blue;
+  
+
+  position: relative;
 }
 
 
-.inner-letter{
-  color: pink;
-  display: table-cell;
-  height: 25px;
-  width: 25px;
-  transform: rotate(-45deg);
-  vertical-align: middle;
+
+.text{
+  position: relative;
+  text-align: center;
+  top: 5px;
 }
+
