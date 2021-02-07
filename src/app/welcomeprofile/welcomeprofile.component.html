@@ -1,23 +1,34 @@
 <div class="welcome">
-<div fxLayout="row wrap" fxLayoutGap="5px grid" >
-    <div fxFlex="100%" fxFlex.xs="100%" fxFlex.sm="100%" fxFlex.md="100%" fxFlex.lg="100%">
+<div fxLayout="row wrap" fxLayoutGap="5px grid">
+    <div class="card-container" fxFlex="100%" fxFlex.xs="100%" fxFlex.sm="100%" fxFlex.md="100%" fxFlex.lg="100%">
  
 
         <mat-card class="mat-elevation-z0">
         <!-- <img mat-card-image [src]=myimage alt="profile-pic"> -->
-        <mat-card-title>
-            <span class="greeting">Hi, I'm</span> 
-            <span class="name"> Akeem Lake</span> 
-            <span class="title">Software Developer</span>
-        </mat-card-title>
+        
+        
+        <!-- <mat-card-title></mat-card-title> -->
+        <span class="greeting"></span> 
+        <p class="greeting">Hi, I'm<span class="name"> Akeem Lake</span></p> 
+        <p class="title">Software Developer</p>
 
         <mat-card-content>
          <p class="description"> 
         I'm currently based in Florida and Georgia, focused on creating
-        and improving websites and more.  
+        and improving websites and more. 
+        
         </p>
         </mat-card-content>
         </mat-card>
+
+        <div class="picture-container">
+        <mat-card class="mat-elevation-z0" >
+            <mat-card-content>
+                     <!-- <img [src]="myimage" alt="profilepic"> -->
+                     <div id="profilepicture"><img [src]="twoimage" alt="profilepicture"></div>
+            </mat-card-content>
+        </mat-card>
+        </div>
 
      </div>
 </div>

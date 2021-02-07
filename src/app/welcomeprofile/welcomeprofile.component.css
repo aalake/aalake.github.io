@@ -1,31 +1,31 @@
 
 .welcome{
   display: flex;
-  justify-content: center;
-  align-items: center;
+   justify-content: center;
+  /* align-items: center; */
 }
+
 
 mat-card{
     text-align: center;
     background-color: inherit;
-    /* box-shadow: none !important; */
+    /* box-shadow: none !important; */ /* removes elevation */
     /* background-color: lightblue; */
-    height: 700px; /* Card height */
-    max-width: 900px; /* Card width */
-    display:flex;
+    /*height: 900px;*/ /* Card height */
+    height: auto;
+    max-width: auto; /* Card width */
+    display: flex;
     flex-direction: column; /* title and description stack (includes any other contents)*/
-    align-items: center;
-    justify-content: center;
+   
+    /* align-items: center;
+    justify-content: center; */
     
 }
 
-mat-card-title{
-    line-height: 1;
-}
-
 .title, .greeting, .name{
-    font-size: 85px;
-    /* font-size: 6rem; */
+    font-size: clamp(70px, 5vw, 120px);
+    font-weight: 500;
+    line-height: 80px;
 }
 
 .title{
@@ -47,36 +47,27 @@ mat-card-title{
 
 .description{
     font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
-    max-width: 500px;
-    margin:0 auto;
+    /* max-width: 500px; */
+    max-width: 700px;
+    margin: 0 auto;
     text-align: justify;
-
+    font-size: clamp(12px,1vw,20px);
 }
 
 
-img{ /* delete 2-5-2021 */
-    width: auto;
-    height: auto; 
-    max-width: 400px;  
-    max-height: 400px;
-    clip-path: circle(40% at 50% 60%);  /* This makes the profile image a circle use parameters to go width at left(less than 50)-right (more than 50) up(less than 50)-down(more than 50) */
-    position: relative; /*Declared position allows for location changes*/
-    top: -30px; /*Moves the image 30px closer to the top of the page*/    
-}  
+/*img{*/  /*delete 2-5-2021 */
+    /* width: auto; */
+    /* height: auto;  */
+    /* max-width: 500px;  
+    max-height: 500px; */
+   /* clip-path: circle(40% at 50% 60%);*/  /* This makes the profile image a circle use parameters to go width at left(less than 50)-right (more than 50) up(less than 50)-down(more than 50) */
+   /* position: relative; */ /*Declared position allows for location changes*/
+   /* top: -30px;*/ /*Moves the image 30px closer to the top of the page*/    
+/*}*/  
 
 
 
-
-/* .parallelogram {
-	width: 30px;
-	height: 60px;
-    transform: skew(-25deg) ;
-    border-style: solid;
-    border-color: #555;
-    border-radius: 5%;
-    border-width: 2px;
-}
-
+/*
 .letter{
     position: relative;
     bottom: 10px;
@@ -84,3 +75,65 @@ img{ /* delete 2-5-2021 */
     font-family: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif;
     color: #287494;
 } */
+
+.picture-container{
+    height: auto;
+    width: auto;
+    max-width: 900px;  
+    max-height: 900px;
+    /* background-color: teal; */
+}
+
+
+
+#profilepicture {
+    width: 285px; /* width of box 250px*/
+    height: 380px; /* height of box 250px*/
+    background: navy;
+    /* border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ; */
+    border-radius: 2% ;
+    color: white;
+    /* box-shadow: 20px 20px rgba(0,0,0,.15);  */
+    box-shadow: 15px 15px 0 0px rgba(255, 255, 255), 15px 15px 0 1px black; /* this creates two separate box shadows one behind the other */
+    transition: all .3s ease;
+    margin: 0 auto;
+  }
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 2%;
+  }
+ 
+
+
+  #profilepicture:hover {
+    box-shadow: 10px 10px rgba(255, 255, 255),10px 10px 0 1px black; 
+    /* this crates two separate box shadows, one behind the other*/
+    /* hover effect when lower values are inserted, creates a zoom in effect. higher values than the ones abover, 
+    creates zoom out effect */
+  }
+
+
+  @media only screen and (max-width: 360px) {
+    
+    .title, .greeting, .name{
+        font-size: clamp(50px, 5vw, 120px);
+        font-weight: 500;
+        line-height: 40px;
+    }
+
+    .description{
+        max-width: 200px;
+        margin: 0 auto;
+        text-align: justify;
+        font-size: clamp(8px,1vw,20px);
+    }
+
+    #profilepicture {
+        width: 165px;
+        height: 220px;
+    }
+  } 
+  
+  

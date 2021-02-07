@@ -4,13 +4,13 @@
   <mat-sidenav-container fullscreen>
 
     <mat-sidenav color="primary" #sidenav fxLayout="column" mode="over"  opened="false" fxHide.gt-sm="true" position="end"> <!--position="end" opens side nav on right, default is left or position="start"-->
-      <div fxLayout="column" >
+      <div fxLayout="column">
         <a mat-button routerLink="/about" (click)="sidenav.close()">Home</a>
         <a mat-button routerLink="/portfolio" (click)="sidenav.close()">Portfolio</a>
         <a mat-button routerLink="/about" (click)="sidenav.close()">About</a>
-        
         <!-- <a mat-button routerLink="/contact" (click)="sidenav.close()">Contact</a> -->
         <a mat-button href="/assets/files/ALResume21.pdf" rel="noopener noreferrer" target="_blank">Resume</a>    
+        <button id="closebutton" mat-button (click)="sidenav.close()"><fa-icon [icon]="faTimes"></fa-icon></button>
       </div>
     </mat-sidenav>
 
@@ -19,9 +19,11 @@
   <header>
     <mat-toolbar style="background-color: #FFF;">
       
-      <a class="companyName" routerLink="/">
-      <a class="logo">Akeem Lake</a>
+      <div class="shape">
+      <a class="logo" routerLink="/">
+          <div class="inner-letter">A</div>
       </a>
+    </div>
 
       <span class="links-spacer"></span> <!-- Puts space between links and logo -->
       <div fxShow="true" fxHide.lt-md="true" class="links">
@@ -54,7 +56,8 @@
     <router-outlet></router-outlet>
       </main>
 
-    <footer  fxLayout="row" fxLayout.xs="column" fxFlexOffset="auto" fxLayoutGap.xs="15px" fxLayoutGap="0px"> 
+    <footer  fxLayout="row" fxLayout.xs="column" fxLayout.sm="column"  fxFlexOffset="auto" fxLayoutGap="0px" fxLayoutGap.xs="15px" fxLayoutGap.sm="15px" > 
+
        
           <div class="contact-modal" fxFlex="1 1 33" fxFlexAlign="center">
             
@@ -81,19 +84,20 @@
               <!--mat-button is here temporary - I will probably style button better later-->
               <button  class="modal-button" (click)="openVerticallyCentered(content)">Contact me</button>
               
-
+              
               <!-- <div class="button"> -->
                 <a href="https://github.com/aalake" class="icon" rel="noopener noreferrer" target="_blank"><fa-icon [icon]="faGithubSquare" atl="github" title="github"></fa-icon></a>
               <!-- </div> -->
               <!-- <div class="button"> -->
                 <a href="https://www.linkedin.com/in/akeemlake" class="icon" rel="noopener noreferrer" target="_blank"><fa-icon [icon]="faLinkedin" alt="linkedin" title="linkedin"></fa-icon></a>
              <!-- </div> -->
+             
 
             </div>  
             
             <div class="credits" style="text-align: center;"fxFlex="1 1 33"  fxFlexAlign="center">
               
-           <span class="build-maintain"><a href="https://github.com/aalake/aalake.github.io" rel="noopener noreferrer" target="_blank"><fa-icon [icon]="faGitAlt" atl="github" title="github"></fa-icon></a> built & maintained by </span>
+           <span class="build-maintain"><a href="https://github.com/aalake/aalake.github.io" rel="noopener noreferrer" target="_blank"><fa-icon [icon]="faGitAlt" atl="github" title="github"></fa-icon></a> Built & Maintained by </span>
            <a class ="name-link" href="mailto:akeemlake@outlook.com" rel="noopener noreferrer" target="_blank">Akeem Lake</a>
             <!--Property bind to font awesome icon-->
             <!-- <p><fa-icon [icon]="faGithubAlt"></fa-icon> </p> -->

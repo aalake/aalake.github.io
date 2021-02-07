@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class WelcomeprofileComponent implements OnInit {
 
   myimage: string = "assets/images/IMG_9021.jpg";
-
+  twoimage: string = "assets/images/IMG_2.JPG"
 
   constructor() {}
 

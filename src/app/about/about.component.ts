@@ -36,6 +36,10 @@ export class AboutComponent implements OnInit {
    example = 'fa fab-facebook';
 
    myimage: string = "assets/images/IMG_9021.jpg";
+   twoimage: string = "assets/images/IMG_2.JPG"
+   threeimage: string = "assets/images/IMG_3.jpg"
+   fourimage: string = "assets/images/IMG_4.JPG"
+
 
   mySkills: ISkills[] = 
   [
