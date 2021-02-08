@@ -14,6 +14,19 @@ h3{
   .portfolio-container > mat-card > mat-card-title { 
     font-size: 16px;
   }
+  
+  mat-card{
+    transform: scale(0.9);
+    transition: all 0.2s ease;
+  }
+
+  mat-card:hover{
+    border-top: 1px solid #287494;
+    border-left: 1px solid #287494;
+    border-right: 1px solid #287494;
+    border-bottom: 1px solid #287494;
+    transform: scale(0.95);
+  }
 
   mat-card-content{
     margin-top: 15px;

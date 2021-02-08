@@ -104,10 +104,11 @@ img{
 
   /* arrows */
   .skills-list::before{
-      content: '\25B9';
+      content: '\25B9'; /* right arrow */
       position: absolute;
       left: 35px;
       line-height: 12px;
+      color: #287494;
   }
 
   /* heading right line */

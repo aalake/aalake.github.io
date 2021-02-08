@@ -31,8 +31,8 @@ export class PortfolioComponent implements OnInit {
 
   {title:'BookBench', 
   description: `A small web application project, built in collaboration with 
-  a software engineering team, for university requirement. It's main purpose was as
-  an online book library with beautiful UI features and the ability to make purchases`, 
+  a software engineering team, for university requirement. It's main purpose was to
+  provide an online book library with a variety of UI features and the ability to make purchases`, 
   techStack:['PHP','HTML5','CSS3','MySQL','JavaScript','Apache'], 
   contributions:'Used all technologies in the stack, to develop on the frontend and backend'}
   
