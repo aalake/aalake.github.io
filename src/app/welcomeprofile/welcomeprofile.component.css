@@ -16,10 +16,6 @@ mat-card{
     max-width: auto; /* Card width */
     display: flex;
     flex-direction: column; /* title and description stack (includes any other contents)*/
-   
-    /* align-items: center;
-    justify-content: center; */
-    
 }
 
 .title, .greeting, .name{
@@ -42,7 +38,6 @@ mat-card{
  .name{
      color: #287494;
     font-family: "Calibre","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
-    /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  //Font-outline */
  }
 
 .description{
@@ -54,27 +49,6 @@ mat-card{
     font-size: clamp(12px,1vw,20px);
 }
 
-
-/*img{*/  /*delete 2-5-2021 */
-    /* width: auto; */
-    /* height: auto;  */
-    /* max-width: 500px;  
-    max-height: 500px; */
-   /* clip-path: circle(40% at 50% 60%);*/  /* This makes the profile image a circle use parameters to go width at left(less than 50)-right (more than 50) up(less than 50)-down(more than 50) */
-   /* position: relative; */ /*Declared position allows for location changes*/
-   /* top: -30px;*/ /*Moves the image 30px closer to the top of the page*/    
-/*}*/  
-
-
-
-/*
-.letter{
-    position: relative;
-    bottom: 10px;
-    font-size: 25px;
-    font-family: Goudy Old Style,Garamond,Big Caslon,Times New Roman,serif;
-    color: #287494;
-} */
 
 .picture-container{
     height: auto;

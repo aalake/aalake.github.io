@@ -4,17 +4,15 @@
         <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="50%" fxFlex.md="50%" fxFlex.lg="33.3%"  *ngFor="let project of projects">
      
             
-     <mat-card fxFlex > <!-- class="mat-elevation-z0" -->
+     <mat-card fxFlex> <!-- class="mat-elevation-z0" -->
         <mat-card-title>{{project.title}}</mat-card-title>
        
         <div class="overlay">
-       <img mat-card-image src="assets/images/create-a-website-1000w.jpg" class="image" alt="Project photo">
+       <img mat-card-image src="assets/images/{{project.projectimage}}" class="image" alt="Project photo">
        <div class="text-center" fxFlex fxLayout="row wrap" fxLayoutGap="5px">  
         <span class="text" *ngFor="let item of project.techStack">{{item}}</span>
       </div>
         </div>
-        <!-- <mat-divider><hr></mat-divider> -->
-        <!-- <mat-divider></mat-divider> -->
         
 <!-- <mat-expansion-panel class="mat-elevation-z0">
         <mat-expansion-panel-header> -->

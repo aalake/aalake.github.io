@@ -3,8 +3,8 @@ import { Component, OnInit } from '@angular/core';
 /*import { faFacebook } from '@fortawesome/free-brands-svg-icons';*/
 /*import { faBath } from '@fortawesome/free-solid-svg-icons';*/
  //import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'; 
- import { faGithub, faLinkedin, faGithubSquare } from '@fortawesome/free-brands-svg-icons'; 
- import {faEnvelope, faFileAlt } from '@fortawesome/free-solid-svg-icons';
+ import { faLinkedin, faGithubSquare } from '@fortawesome/free-brands-svg-icons'; 
+
 
 @Component({
   selector: 'app-socials',
@@ -12,13 +12,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./socials.component.css']
 })
 export class SocialsComponent implements OnInit {
-  /*faTwitter = faTwitter;*/
-  /*faFacebook = faFacebook;*/
-  faGithub = faGithub;
   faGithubSquare = faGithubSquare;
   faLinkedin = faLinkedin;
-  faEnvelope = faEnvelope;
-  faFileAlt = faFileAlt;
+
   
   constructor() { }
 

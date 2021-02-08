@@ -8,15 +8,9 @@
         <mat-card class="mat-elevation-z0">
             <mat-card-title>About Me</mat-card-title>
             <mat-card-content>
-               
-                <!-- <div class="fgf"> -->
-                    <div id="profilepicture"><img [src]="twoimage" alt="profilepicture"></div>
-                <!-- <div id="myimg"><img [src]="threeimage"></div> -->
-                <!-- </div> -->
+              
+                 <div id="profilepicture"><img [src]="twoimage" alt="profilepicture"></div> <!--Profile image-->
 
-                <!-- <div id="myimg"></div> -->
-                
-                <!--<div id="myimg">YOOOO</div>--><!--This will be image, grey-out image slightly with theme color to signal that it should be hovered-->
                 <p>I'm a developer based in Miami, Florida and a graduate of the Florida International University class of December 2020. While at FIU, I was 
                     exposed to various courses on my way to attaining my Bachelor's of Science in Computer Science. These courses include: <span class="courses">Data Structures, Programming Languages, Database Systems/Administration, 
                     Software Engineering(Agile, Project Management, Team-focus), as well as other courses involving Intepersonal skills.</span>
@@ -39,12 +33,9 @@
                     marketing outreach information on a system and keeping this information safe and secure.  
                    </p>
                 <br>
-                <div class="fade_rule"></div>
+                <div class="fade_rule"></div> <!-- Bottom Line-->
                 <br>
             </mat-card-content>
-       <!-- <br><br><br>
-         <div class="fade_rule"></div>
-        <br><br><br> -->
         </mat-card>
         
     </div>
@@ -52,12 +43,9 @@
     <div class="skills-container" fxLayout="row wrap" fxLayoutGap="15px grid">
         
         <div fxFlex="50%" fxFlex.xs="100%" fxFlex.sm="100%" fxFlex.md="50%" fxFlex.lg="50%" *ngFor="let items of mySkills">
-            <!-- <div fxFlex="12%" fxFlex.xs="100%" fxFlex.sm="50%" fxFlex.md="25%" fxFlex.lg="25%" *ngFor="let items of mySkills"> -->
-            <!-- <mat-card fxFlex.lt-lg="100%" fxFlex.gt-md="100%" class="mat-elevation-z0"> -->
-                <mat-card fxFlex.lt-lg="100%" fxFlex.gt-md="100%">
+            
+            <mat-card fxFlex.lt-lg="100%" fxFlex.gt-md="100%">
                 <mat-card-title>{{items.title}}</mat-card-title>
-                
-                <!-- <mat-icon><div class="skills-icons" *ngFor="let icons of items.icons"><fa-icon [icon]="icons"></fa-icon></div></mat-icon> -->
                 <mat-card-content *ngFor="let skills of items.skills">
                    <ul class="skills-list">
                        <li > 
@@ -66,7 +54,6 @@
                    </ul>
                 </mat-card-content>             
             </mat-card>
-
         </div>
     </div>
 

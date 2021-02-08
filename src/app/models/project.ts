@@ -3,4 +3,5 @@ export interface IProject{
     description: string;
     techStack?: string[];
     contributions?: string;
+    projectimage: string;
 }

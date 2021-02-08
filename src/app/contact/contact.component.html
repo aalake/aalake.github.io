@@ -1,5 +1,5 @@
 <div id="forms"> 
-    <form  [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="form" autocomplete="off">
+    <form  [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="form">
         <div class="form__div">
         <mat-form-field class="example-full-width" >
             <mat-label>Full Name</mat-label>
@@ -17,7 +17,6 @@
             <br> 
 
             <div class="form__div" >
-                <!-- DONT UNCOMMENT <mat-form-field appearance="fill">  I took the fill appearance off so it doesn't look grey-->
                 <mat-form-field>
                     <mat-label>Message</mat-label>
                     <textarea matInput placeholder="max: 300 characters" formControlName="message"></textarea>

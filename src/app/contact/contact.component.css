@@ -3,9 +3,6 @@
     box-sizing: border-box;
   } 
 
-/*input{
-     margin: 5px;  
-}*/
 
 .submit-button{
     background-color: Transparent;
@@ -20,7 +17,6 @@
 
 button:hover{
     color:black;
-    /* filter: drop-shadow(2px 2px 15px #000000); */
 }
 
 mat-form-field {

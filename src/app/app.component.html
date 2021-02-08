@@ -1,6 +1,5 @@
 
 <div> 
-  <!-- <mat-toolbar style="background-color:white; border-bottom: 1px solid lightgrey; ">-->
   <mat-sidenav-container fullscreen>
 
     <mat-sidenav color="primary" #sidenav fxLayout="column" mode="over"  opened="false" fxHide.gt-sm="true" position="end"> <!--position="end" opens side nav on right, default is left or position="start"-->
@@ -14,10 +13,10 @@
       </div>
     </mat-sidenav>
 
-<mat-sidenav-content style="background-color: #FFF;" fxLayout="column">
+<mat-sidenav-content style="background-color: #FFF" fxLayout="column">
      
   <header>
-    <mat-toolbar style="background-color: #FFF;">
+    <mat-toolbar style="background-color: #FFF">
       
       <a class="logo" routerLink="/">
       <p class="text">A</p>
@@ -29,11 +28,6 @@
 
       <span class="links-spacer"></span> <!-- Puts space between links and logo -->
       <div fxShow="true" fxHide.lt-md="true" class="links">
-        <!-- <a mat-button routerLink="/portfolio">Portfolio</a> -->
-        <!-- <a routerLink="/portfolio">Portfolio</a>
-        <a mat-button routerLink="/contact">Contact</a>
-        <a mat-button routerLink="/about">About</a> -->
-       
         <a routerLink="/">Home</a>
         <a routerLink="/portfolio">Portfolio</a>
         <a routerLink="/about">About</a>

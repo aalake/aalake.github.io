@@ -3,7 +3,6 @@ import { faPaperPlane } from'@fortawesome/free-solid-svg-icons';
 import { faCoffee } from'@fortawesome/free-solid-svg-icons';
 import { FormGroup, FormBuilder } from  '@angular/forms'; /* Import this after importing FormsModule and ReactiveFormsModule in app.module.ts */
 import { HttpClient } from '@angular/common/http';
-
 import {HttpParams} from '@angular/common/http';
 import {HttpHeaders} from '@angular/common/http';
 

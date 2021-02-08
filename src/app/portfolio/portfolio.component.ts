@@ -20,21 +20,24 @@ export class PortfolioComponent implements OnInit {
     Department) to be used by civilians and police departments, to communicate
     information of crimes and suspicious activities`, 
     techStack:['Angular', 'HTML5', 'CSS3', 'Material UI','Java Spring', 'MSSQL'],
-   contributions:'Frontend (Angular, HTML5, CSS3, Bootstrap, Angular Material UI)'},
+   contributions:'Frontend (Angular, HTML5, CSS3, Bootstrap, Angular Material UI)',
+  projectimage:'projone.png'},
 
   { title:'Portfolio Site', 
   description: `My site is used as another avenue for people to get to know me.
   It has communication features,background info & personal interest in one place`, 
   techStack:['Angular','HTML5','CSS3','Material UI', 
   'MySQL', 'Node','Express'],
-  contributions:'Designed and built site'},
+  contributions:'Designed and built site',
+projectimage:'projtwo.png'},
 
   {title:'BookBench', 
   description: `A small web application project, built in collaboration with 
   a software engineering team, for university requirement. It's main purpose was to
   provide an online book library with a variety of UI features and the ability to make purchases`, 
   techStack:['PHP','HTML5','CSS3','MySQL','JavaScript','Apache'], 
-  contributions:'Used all technologies in the stack, to develop on the frontend and backend'}
+  contributions:'Used all technologies in the stack, to develop on the frontend and backend',
+projectimage:'projthree.jpg'}
   
 ]  
   constructor() {  }
