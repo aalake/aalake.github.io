@@ -29,7 +29,7 @@ export class PortfolioComponent implements OnInit {
   techStack:['Angular','HTML5','CSS3','Material UI', 
   'MySQL', 'Node','Express'],
   contributions:'Designed and built site',
-projectimage:'projtwo.png'},
+projectimage:'projtwo.jpg'},
 
   {title:'BookBench', 
   description: `A small web application project, built in collaboration with 

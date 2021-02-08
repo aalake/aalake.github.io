@@ -153,7 +153,6 @@ mat-sidenav-container {
     padding: 5px;
     margin-left: 5px;
     font-size: 20px;
-    color: #287494;
     /* align-items: center; */
   }
 
@@ -174,28 +173,30 @@ mat-form-field{
 }
 
 
+
 .shape{
   min-width: clamp(35px,2vw,35px);
   height: clamp(35px,2vw,35px);
   border-radius: 50%;
   /*padding: 25px;*/ /* increase circle size */
+  
   border-top: 2px solid transparent;
   border-left: 2px solid #287494;
   border-right: 2px solid #287494;
   border-bottom: 2px solid #287494;
-  /* border-left: 2px solid #05FF86;
-  border-right: 2px solid#05FF86;
-  border-bottom: 2px solid #05FF86; */
-  transform: rotate(45deg); 
-  -webkit-transform: rotate(45deg) ;
+
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transition: all 0.6s ease;
+  -webkit-transition:  all 0.6s ease;
+  -ms-transition: all 0.6s ease;
 }
 
 .shape:hover {
   transform: rotate(-45deg); 
-  -webkit-transform: rotate(-45deg) ;
-    -ms-transform: rotate(-45deg) ;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
 }
 
 .text{
