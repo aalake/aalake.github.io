@@ -54,12 +54,16 @@ mat-sidenav-container {
     background-color: #287494;
     visibility: hidden;
     transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+    -ms-transform: scaleX(0);
     transition: all 0.3s ease-in-out 0s;
   }
   
   .links a:hover::before {
     visibility: visible;
     transform: scaleX(1);
+    -webkit-transform: scaleX(1) ;
+    -ms-transform: scaleX(1);
   }
 
   /* underline nav links above*/
@@ -183,11 +187,15 @@ mat-form-field{
   border-right: 2px solid#05FF86;
   border-bottom: 2px solid #05FF86; */
   transform: rotate(45deg); 
+  -webkit-transform: rotate(45deg) ;
+  -ms-transform: rotate(45deg);
   transition: all 0.6s ease;
 }
 
 .shape:hover {
   transform: rotate(-45deg); 
+  -webkit-transform: rotate(-45deg) ;
+    -ms-transform: rotate(-45deg) ;
 }
 
 .text{
@@ -195,5 +203,7 @@ mat-form-field{
   text-align: center;
   font-size: clamp(20px,2vw,25px);
   transform: translateY(8px) translateX(25px);
+  -webkit-transform: translateY(8px) translateX(25px) ;
+    -ms-transform: translateX(8px) translateX(25px);
 }
 

@@ -14,12 +14,12 @@ exports.create = (req, res) => {
         message: req.body.message
       });
 
-// Save Customer in the database
+// Save Contact in the database
 Contact.create(contact, (err, data) => {
     if (err)
       res.status(500).send({
         message:
-          err.message || "Some error occurred while creating the Customer."
+          err.message || "Some error occurred while creating the Contact."
       });
     else res.send(data);
   });
