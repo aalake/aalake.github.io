@@ -45,6 +45,9 @@ const onListening = () => { //logs that we are now listening on a specific port
 };
 
 const port = normalizePort(process.env.PORT || "3000"); //setting up port  default port of where we host site or 3000(can be number or string)
+
+
+
 app.set("port", port); //set a config for configuration environment
 
 const server = http.createServer(app);

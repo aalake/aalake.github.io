@@ -4,7 +4,7 @@
 
     <mat-sidenav color="primary" #sidenav fxLayout="column" mode="over"  opened="false" fxHide.gt-sm="true" position="end"> <!--position="end" opens side nav on right, default is left or position="start"-->
       <div fxLayout="column">
-        <a mat-button routerLink="/about" (click)="sidenav.close()">Home</a>
+        <a mat-button routerLink="/" (click)="sidenav.close()">Home</a>
         <a mat-button routerLink="/portfolio" (click)="sidenav.close()">Portfolio</a>
         <a mat-button routerLink="/about" (click)="sidenav.close()">About</a>
         <!-- <a mat-button routerLink="/contact" (click)="sidenav.close()">Contact</a> -->
@@ -55,10 +55,12 @@
     <footer  fxLayout="row" fxLayout.xs="column" fxLayout.sm="column"  fxFlexOffset="auto" fxLayoutGap="0px" fxLayoutGap.xs="15px" fxLayoutGap.sm="15px" > 
 
        
-          <div class="contact-modal" fxFlex="1 1 33" fxFlexAlign="center">
+      <div class="contact-modal" fxFlex="1 1 33" fxFlexAlign="center">
             
-        <span class="in-touch">Get In Touch: </span>           
-            <ng-template #content let-modal>
+        <span class="in-touch">Get In Touch: </span>  
+                 
+           <!-- Contact modal -->
+            <ng-template #content let-modal> 
                  
                    <div class="modal-header">
                     <h4 class="modal-title">Contact me</h4>
@@ -76,18 +78,14 @@
                   </div>
               
               </ng-template>
+  
+              <button class="modal-button" (click)="openVerticallyCentered(content)">Contact me</button>
+              
+              
             
-              <!--mat-button is here temporary - I will probably style button better later-->
-              <button  class="modal-button" (click)="openVerticallyCentered(content)">Contact me</button>
-              
-              
-              <!-- <div class="button"> -->
-                <a href="https://github.com/aalake" class="icon" rel="noopener noreferrer" target="_blank"><fa-icon [icon]="faGithubSquare" atl="github" title="github"></fa-icon></a>
-              <!-- </div> -->
-              <!-- <div class="button"> -->
-                <a href="https://www.linkedin.com/in/akeemlake" class="icon" rel="noopener noreferrer" target="_blank"><fa-icon [icon]="faLinkedin" alt="linkedin" title="linkedin"></fa-icon></a>
-             <!-- </div> -->
-             
+             <a href="https://github.com/aalake" class="icon" rel="noopener noreferrer" target="_blank"><fa-icon [icon]="faGithubSquare" atl="github" title="github"></fa-icon></a>
+             <a href="https://www.linkedin.com/in/akeemlake" class="icon" rel="noopener noreferrer" target="_blank"><fa-icon [icon]="faLinkedin" alt="linkedin" title="linkedin"></fa-icon></a>
+             <a href="mailto:akeemlake@outlook.com" class="icon" rel="noopener noreferrer" target="_blank"><fa-icon [icon]="faEnvelope" alt="linkedin" title="linkedin"></fa-icon></a>
 
             </div>  
             

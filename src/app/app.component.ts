@@ -4,7 +4,8 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { EventEmitter,Output, Input, AfterViewInit } from '@angular/core';
 import { Router, Routes, RouterModule } from '@angular/router'
 import {faGithubAlt, faGitAlt, faGithub,faGithubSquare, faLinkedin} from '@fortawesome/free-brands-svg-icons'
-import { faBars, faCodeBranch, faTimes} from '@fortawesome/free-solid-svg-icons'; 
+import { faBars, faCodeBranch, faTimes, faEnvelope} from '@fortawesome/free-solid-svg-icons'; 
+
 
 
 
@@ -24,7 +25,7 @@ export class AppComponent {
   faGithubSquare = faGithubSquare;
   faLinkedin = faLinkedin;
   faTimes = faTimes;
-  
+  faEnvelope = faEnvelope;
   // constructor() { }
 
 

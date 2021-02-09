@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/d3c80fce-c12a-4de8-aa87-d6501e3bf798/resourceGroups/Webapps/providers/Microsoft.Web/sites/lakeportfolio-app",
+    "appService.deploySubpath": "."
+}
