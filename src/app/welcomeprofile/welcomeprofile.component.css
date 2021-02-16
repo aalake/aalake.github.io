@@ -36,7 +36,7 @@ mat-card{
  }
 
  .name{
-     color: #287494;
+     color: #076CB8;
     font-family: "Calibre","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
  }
 
@@ -71,6 +71,7 @@ mat-card{
     box-shadow: 15px 15px 0 0px rgba(255, 255, 255), 15px 15px 0 1px black; /* this creates two separate box shadows one behind the other */
     transition: all .3s ease;
     margin: 0 auto;
+   
   }
 
 img{
