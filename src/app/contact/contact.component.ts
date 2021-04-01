@@ -15,15 +15,15 @@ import {HttpHeaders} from '@angular/common/http';
 })
 
 export class ContactComponent implements OnInit {
-  
+
+  // myimage: string = "assets/images/IMG_9021.jpg";
+
   faPaperPlane = faPaperPlane;
   faCoffee = faCoffee;
 
-  contactForm: FormGroup; 
 
-  myimage: string = "assets/images/IMG_9021.jpg";
-  
-
+  contactForm: FormGroup;
+   
   createContactForm(){
     this.contactForm = this.formBuilder.group({
       id:['0'],
