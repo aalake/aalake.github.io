@@ -177,14 +177,35 @@ mat-form-field{
 }
 
 
+.logo{
+  border: 2px solid;
+  /* padding: 15px 15px; */
+  padding: 1px 5px;
+  color: rgba(0,0,0,0.70);
+ 
+}
 
-.shape{
+.logo:hover{
+  /* transform: rotate(180deg);
+  transition: all 0.6s ease; */
+  color: #076CB8;
+  
+}
+
+.logoText{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  transform: translateX(-29px);
+}
+
+
+
+/* .shape{
   min-width: clamp(35px,2vw,35px);
   height: clamp(35px,2vw,35px);
-  border-radius: 50%;
+  border-radius: 50%; */
   /*padding: 25px;*/ /* increase circle size */
   
-  border-top: 2px solid transparent;
+  /* border-top: 2px solid transparent;
   border-left: 2px solid #287494;
   border-right: 2px solid #287494;
   border-bottom: 2px solid #287494;
@@ -210,7 +231,7 @@ mat-form-field{
   transform: translateY(8px) translateX(25px);
   -webkit-transform: translateY(8px) translateX(25px) ;
     -ms-transform: translateX(8px) translateX(25px);
-}
+} */
 
 
 
