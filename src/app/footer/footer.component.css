@@ -1,36 +1,94 @@
-.footer{
-    /* margin: auto; */
-   
-    
-    
-    /* height: 100px; */
-    /* bottom: 0px;  */
-    /* width: 100%; */
-    
-    background-color: green;
-    
-}
 
-.footer a, a:visited, a:hover, a:active {
+ a, a:visited, a:hover, a:active{
     text-decoration: none;
-    /*color: #017038;*/
+    color: inherit;
+  }
+
+  /* a:hover{
     color: #287494;
-}
-
-.contact-modal{
-    float: left;
-}
-
-.credits{
-     text-align: center;
-}
-
+  } */
  
- .modal-header {
-    border-bottom: 0 none;
-}
+  .contact-modal{
+      float: left;
+  }
+  
+  .credits{
+       text-align: start;
+       /* line-height: 20px; */
+     /* margin: auto;
+     text-align: center; */
+  }
+  
+   
+  .modal-header {
+      border-bottom: 0 none;
+  }
+  
+  .modal-footer {
+      border-top: 0 none;
+  }
+  
+  .modal-button{
+        cursor: pointer; 
+        border: none; 
+        background-color: transparent;
+        /* background-color: blueviolet; */
+        border-style: solid;
+        border-color:#076CB8;
+        color: #076CB8;;
+        border-radius: 6px;
+        border-width: 2px;
+        transition: all 0.6;
+        /* box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);  */
+  }
 
-.modal-footer {
-    border-top: 0 none;
-}
+  .modal-button:hover{
+    background-color: #076CB8;
+    color: #fff;
+  }
 
+  footer{
+    /* height: auto;*/
+    min-height: 50px; 
+    
+  }
+
+  .content{
+    padding-bottom: 2.5rem; 
+    /* padding-bottom: 0%; */
+    
+  }
+
+  .in-touch{
+     /* text-align: center; */
+     /* align-items: center; */
+     margin-left: 10px;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     font-size: 17px;
+  }
+
+  .build-maintain{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+  }
+
+  .build-maintain fa-icon:hover{
+    color: #076CB8;
+  }
+
+  .name-link:hover{
+    color: #076CB8;
+  }
+
+  .icon{
+    padding: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+    /* align-items: center; */
+  }
+
+  .icon:hover{
+    color:#076CB8;
+  }
+
+  

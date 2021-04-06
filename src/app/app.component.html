@@ -7,7 +7,6 @@
         <a mat-button routerLink="/" (click)="sidenav.close()">Home</a>
         <a mat-button routerLink="/portfolio" (click)="sidenav.close()">Portfolio</a>
         <a mat-button routerLink="/about" (click)="sidenav.close()">About</a>
-        <!-- <a mat-button routerLink="/contact" (click)="sidenav.close()">Contact</a> -->
         <a mat-button href="/assets/files/ALResume21.pdf" rel="noopener noreferrer" target="_blank">Resume</a>    
         <button id="closebutton" mat-button (click)="sidenav.close()"><fa-icon [icon]="faTimes"></fa-icon></button>
       </div>
@@ -17,91 +16,79 @@
      
   <header>
     <mat-toolbar>
-      
-      <!-- <a class="logo" routerLink="/">
-      <p class="text">A</p>
-      </a>
-      <a class="logo" routerLink="/">
-        <div class="shape"></div>
-      </a>
-       -->
 
       <span class="links-spacer"></span> <!-- Puts space between links and logo -->
-      <div fxShow="true" fxHide.lt-md="true" class="links">
-        <a routerLink="/">Home</a>
-        <a routerLink="/portfolio">Portfolio</a>
-        <a routerLink="/about">About</a>
-        <!-- <a routerLink="/contact"><span class="num">03.</span> Contact</a>  -->
-        <a href="/assets/files/ALResume21.pdf" rel="noopener noreferrer" target="_blank">Resume</a>
-  </div>
-
+        <div fxShow="true" fxHide.lt-md="true" class="links">
+          <a routerLink="/">Home</a>
+          <a routerLink="/portfolio">Portfolio</a>
+          <a routerLink="/about">About</a>
+          <a href="/assets/files/ALResume21.pdf" rel="noopener noreferrer" target="_blank">Resume</a>
+        </div>
       <span class="example-spacer"></span> <!-- Puts space between icon and logo-->
 
-      <div fxShow="true" fxHide.gt-sm="true">
-        <button mat-icon-button (click)="sidenav.toggle()">
-          <mat-icon><fa-icon [icon]="faBars"></fa-icon></mat-icon>
-        </button>
-      </div>
+        <div fxShow="true" fxHide.gt-sm="true">
+          <button mat-icon-button (click)="sidenav.toggle()"><mat-icon><fa-icon [icon]="faBars"></fa-icon></mat-icon></button>
+       </div>
 
-
-    </mat-toolbar>
+      </mat-toolbar>
   </header>
-    <!-- <mat-sidenav-container fxFlexFill class="example-container"> -->
+
   
-      <main class="content">
+<main class="content">
     <router-outlet></router-outlet>
-      </main>
+</main>
 
-    <footer  fxLayout="row" fxLayout.xs="column" fxLayout.sm="column"  fxFlexOffset="auto" fxLayoutGap="0px" fxLayoutGap.xs="15px" fxLayoutGap.sm="15px" > 
-
+<footer fxLayout="row" 
+  fxLayout.xs="column" 
+  fxLayout.sm="column"   
+  fxFlexOffset="auto" 
+  fxLayoutGap="0px" 
+  fxLayoutGap.xs="15px" 
+  fxLayoutGap.sm="15px">
+  
+  <div class="contact-modal" fxFlex="1 1 33" fxFlexAlign="center"> 
+    <span class="in-touch">Get In Touch: </span>  
+             
+       <!-- Contact modal -->
+        <ng-template #content let-modal> 
+             
+               <div class="modal-header">
+                <h4 class="modal-title">Contact me</h4>
+                <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              
+              <div class="modal-body">
+                <app-contact></app-contact>
+              </div>
+  
+              <div class="modal-footer">
+                <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
+              </div>
+              
+          </ng-template>
+  
+          <!-- <button class="modal-button" (click)="openVerticallyCentered(content)">Contact me</button> --> 
+          
+          
+        
+         <a href="https://github.com/aalake" class="icon" rel="noopener noreferrer" target="_blank"><fa-icon [icon]="faGithubSquare" atl="github" title="github"></fa-icon></a>
+         <a href="https://www.linkedin.com/in/akeemlake" class="icon" rel="noopener noreferrer" target="_blank"><fa-icon [icon]="faLinkedin" alt="linkedin" title="linkedin"></fa-icon></a>
+         <a href="mailto:akeemlake@outlook.com" class="icon" rel="noopener noreferrer" target="_blank"><fa-icon [icon]="faEnvelope" alt="linkedin" title="linkedin"></fa-icon></a>
+  
+        </div>  
+        
+        <div class="credits" style="text-align: center;"fxFlex="1 1 33"  fxFlexAlign="center">
+          
+       <span class="build-maintain"><a href="https://github.com/aalake/aalake.github.io" rel="noopener noreferrer" target="_blank"><fa-icon [icon]="faGitAlt" atl="github" title="github"></fa-icon></a> Built & Maintained by </span>
+       <a class ="name-link" href="mailto:akeemlake@outlook.com" rel="noopener noreferrer" target="_blank">Akeem Lake</a>
        
-      <div class="contact-modal" fxFlex="1 1 33" fxFlexAlign="center">
-            
-        <span class="in-touch">Get In Touch: </span>  
-                 
-           <!-- Contact modal -->
-            <ng-template #content let-modal> 
-                 
-                   <div class="modal-header">
-                    <h4 class="modal-title">Contact me</h4>
-                    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  
-                  <div class="modal-body">
-                    <app-contact></app-contact>
-                  </div>
-
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
-                  </div>
-              
-              </ng-template>
+        </div>
   
-              <!-- <button class="modal-button" (click)="openVerticallyCentered(content)">Contact me</button> -->
-              
-              
-            
-             <a href="https://github.com/aalake" class="icon" rel="noopener noreferrer" target="_blank"><fa-icon [icon]="faGithubSquare" atl="github" title="github"></fa-icon></a>
-             <a href="https://www.linkedin.com/in/akeemlake" class="icon" rel="noopener noreferrer" target="_blank"><fa-icon [icon]="faLinkedin" alt="linkedin" title="linkedin"></fa-icon></a>
-             <a href="mailto:akeemlake@outlook.com" class="icon" rel="noopener noreferrer" target="_blank"><fa-icon [icon]="faEnvelope" alt="linkedin" title="linkedin"></fa-icon></a>
-
-            </div>  
-            
-            <div class="credits" style="text-align: center;"fxFlex="1 1 33"  fxFlexAlign="center">
-              
-           <span class="build-maintain"><a href="https://github.com/aalake/aalake.github.io" rel="noopener noreferrer" target="_blank"><fa-icon [icon]="faGitAlt" atl="github" title="github"></fa-icon></a> Built & Maintained by </span>
-           <a class ="name-link" href="mailto:akeemlake@outlook.com" rel="noopener noreferrer" target="_blank">Akeem Lake</a>
-            <!--Property bind to font awesome icon-->
-            <!-- <p><fa-icon [icon]="faGithubAlt"></fa-icon> </p> -->
-           <!--  <p></p>--> <!--Property bind to font awesome icon -->
-         <!-- <p><fa-icon [icon]="faGitAlt"></fa-icon></p> --> <!-- Property bind to font awesome icon -->
-            </div>
-    
-            <div class="right-space" fxFlex="1 1 33"> <!--this should and will be empty--></div>
-  
+        <div class="right-space" fxFlex="1 1 33"><!--this should and will be empty--></div>
       </footer>
+
 
   </mat-sidenav-content>      
 </mat-sidenav-container>
