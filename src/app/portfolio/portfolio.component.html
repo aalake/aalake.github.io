@@ -8,7 +8,7 @@
         <mat-card-title>{{project.title}}</mat-card-title>
        
         <div class="overlay">
-       <!-- <img mat-card-image src="assets/images/{{project.projectimage}}" class="image" alt="Project photo"> -->
+       <img mat-card-image src="assets/images/{{project.projectimage}}" class="image" alt="Project photo">
        <div class="text-center" fxFlex fxLayout="row wrap" fxLayoutGap="5px">  
         <span class="text" *ngFor="let item of project.techStack">{{item}}</span>
       </div>

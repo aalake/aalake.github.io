@@ -20,13 +20,10 @@
   
 
 <div class="logo"><a routerLink="/">AL</a></div>
-
- <div class="logoText">
+<div class="logoText">
    
   </div>
 
-
-  
       <span class="links-spacer"></span> <!-- Puts space between links and logo -->
         <div fxShow="true" fxHide.lt-md="true" class="links">
           <a routerLink="/">Home</a>
@@ -58,30 +55,7 @@
   
   <div class="contact-modal" fxFlex="1 1 33" fxFlexAlign="center"> 
     <span class="in-touch">Get In Touch: </span>  
-             
-       <!-- Contact modal -->
-        <ng-template #content let-modal> 
-             
-               <div class="modal-header">
-                <h4 class="modal-title">Contact me</h4>
-                <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              
-              <div class="modal-body">
-                <app-contact></app-contact>
-              </div>
-  
-              <div class="modal-footer">
-                <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
-              </div>
-              
-          </ng-template>
-  
-          <!-- <button class="modal-button" (click)="openVerticallyCentered(content)">Contact me</button> --> 
-          
-          
+                
         
          <a href="https://github.com/aalake" class="icon" rel="noopener noreferrer" target="_blank"><fa-icon [icon]="faGithubSquare" atl="github" title="github"></fa-icon></a>
          <a href="https://www.linkedin.com/in/akeemlake" class="icon" rel="noopener noreferrer" target="_blank"><fa-icon [icon]="faLinkedin" alt="linkedin" title="linkedin"></fa-icon></a>

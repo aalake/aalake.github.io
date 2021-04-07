@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
-
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { EventEmitter,Output, Input, AfterViewInit } from '@angular/core';
-import { Router, Routes, RouterModule } from '@angular/router'
+// import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+// import { EventEmitter,Output, Input, AfterViewInit } from '@angular/core';
+// import { Router, Routes, RouterModule } from '@angular/router'
 import {faGithubAlt, faGitAlt, faGithub,faGithubSquare, faLinkedin} from '@fortawesome/free-brands-svg-icons'
 import { faBars, faCodeBranch, faTimes, faEnvelope} from '@fortawesome/free-solid-svg-icons'; 
 
@@ -26,25 +25,12 @@ export class AppComponent {
   faLinkedin = faLinkedin;
   faTimes = faTimes;
   faEnvelope = faEnvelope;
-  // constructor() { }
-
-
-  
-
-  constructor(private modalService: NgbModal, private router: Router) {}
-
-  @Output() modalClose : EventEmitter<any> = new EventEmitter<any>();
-
-  closeModal( $event ) {
-    this.router.navigate([{outlets: {contact: null}}]);
-    this.modalClose.next($event);
-  }
  
-  openVerticallyCentered(content) {
-  this.modalService.open(content, { centered: true });
-  }
+ 
 
+  constructor() {}
 
+ 
 
 
 
